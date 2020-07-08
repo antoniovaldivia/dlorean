@@ -17,9 +17,9 @@
         <header>
             <ul class="topGrid">
                 <li class="headerMenu">
-                    <nav>
+                    <nav class="navMenuicon">
                         <img src="img/hamburger.svg" alt="Menu icon">
-                        <ul class="displayNone">
+                        <ul class="navMenu">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#">Sign in</a></li>
                             <li><a href="#">Profile</a></li>
@@ -33,9 +33,9 @@
                 </li>
                 <li class="headerSearch">
                     <img src="img/search.svg" alt="Search icon">
-                    <form class="displayNone">
-                        <label>Search<input type="search"></label>
-                        <input type="submit" value="Search">
+                    <form class="headerSearchFrom">
+                        <label>Search</label><input type="search" placeholder="Search">
+                        <input type="submit" value="">
                     </form>
                 </li>
             </ul>
@@ -279,10 +279,12 @@
             <section class="popularEvents">
                 <h2>Popular events</h2>
                 <!-- Popular event number 1 -->
+                <ul class="popularEventsGird">
+                    <li>
                 <article class="event">
                     <ul class="eventsGird">
                         <li>
-                            <header>
+                            <header class="eventHeader">
                                 <time class="purple" datetime="1969-07-20">Jul 20, <span>1969</span></time>
                                 <a href="#">
                                     <h3>One Giant Leap For Mankind: The First Person on the Moon</h3>
@@ -310,11 +312,13 @@
                         </li>
                     </ul>
                 </article>
+                </li>
+                <li>
                 <!-- Popular event number 2 -->
                 <article class="event">
                     <ul class="eventsGird">
                         <li>
-                            <header>
+                            <header class="eventHeader">
                                 <time class="purple" datetime="2001-05-22">May 22, <span>2001</span></time>
                                 <a href="#">
                                     <h3>Bitcoin Pizza Day</h3>
@@ -340,11 +344,13 @@
                         </li>
                     </ul>
                 </article>
+                </li>
                 <!-- Popular event number 3 -->
+                <li>
                 <article class="event">
                     <ul class="eventsGird">
                         <li>
-                            <header>
+                            <header class="eventHeader">
                                 <time class="purple" datetime="1992-03-15">Mar 15, <span>1992</span></time>
                                 <a href="#">
                                     <h3>Michael Scott is hired at Dunder Mifflin as a salesman</h3>
@@ -372,6 +378,7 @@
                         </li>
                     </ul>
                 </article>
+            </li>
             </section>
         </main>
 
