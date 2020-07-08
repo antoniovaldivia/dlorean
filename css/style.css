@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+/* Hello Rocco! */
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    background-color: #ffffff;
+}
+
+h1, h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+}
+
+h1 {
+    color: #2b2e42;
+}
+
+h2 {
+    font-size: 1.9em;
+    color: #4c516c;
+}
+
+h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #4c516c;
+}
+
+h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: #2b2e42
+}
+
+a {
+    text-decoration: none;
+    color: #2B2E42;
+}
+
+.topGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0.8em;
+}
+
+.headerMenu img {
+    max-width: 1.4em;
+}
+
+.headerLogo img {
+    max-width: 11em;
+}
+
+.headerSearch {
+    text-align: right;
+}
+
+.headerSearch img {
+    max-width: 1.3em;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.displayNone {
+    display: none;
+}
+
+.masthead {
+    background-color: #fef1e9;
+    text-align: center;
+}
+
+.masthead img {
+    margin-top: 2em;
+    max-width: 13em;
+}
+
+.mastheadGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.mastheadCTA {
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: 500;
+    padding: 0.9em;
+    margin-bottom: 0.7em;
+}
+
+.linkDlorean {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2b2e42;
+}
+
+.linkCTA {
+    border-radius: 0.8em;
+    background-color: #2b2e42;
+    padding: 0.4em;
+    margin-top: 1em;
+    display: block;
+    width: 10em;
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frontpageTimeline {
+    border: 0.1em solid #f1f2f6;
+    border-radius: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+.popularTimelines {
+    padding: 0.9em;
+}
+
+.popularTimelinesGird {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+.popularTimelinesHeaderGird {
+    display: grid;
+    grid-template-columns: 10.5em 1fr;
+    padding: 0.5em;
+}
+
+/* How can I crop all the images to have the same size, no matter their original dimensions?*/
+
+.popularTimelinesHeaderGirdImg {
+    max-width: 30%;
+}
+
+.popularTimelinesHeaderGird img {
+    border-radius: 0.8em;
+    max-width: 10em;
+    display: grid;
+}
+
+.popularTimelinesHeaderGird a {
+    font-weight: 700;
+}
+
+/* Not sure if this is the best to display the icons*/
+
+.authorIcon {
+    display: inline-block;
+    background: url("/img/author.svg") no-repeat;
+    height: 0.9em;
+    width: 0.9em;
+    padding-left: 1.1em;
+}
+
+.dynamicTimeline {
+    margin: 0em 0.5em 0.5em 0.5em;
+    border-radius: 0.8em;
+    padding: 0.8em;
+    font-size: 1.1em;
+}
+
+/* Not sure how to create the timeline dots :( */
+
+.dynamicTimelineLine {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 0.9em;
+}
+
+.frontpageTimeline time {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.purplebg {
+    background-color: #f4e1ea;
+}
+
+.purpleline {
+    background-color: #d38bac;
+}
+
+.purple {
+    color: #b33771;
+}
+
+.popularTimelinesEventsGird {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.1em;
+}
