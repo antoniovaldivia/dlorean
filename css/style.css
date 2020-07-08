@@ -225,7 +225,7 @@ address {
 .popularTimelinesEventsGird {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0.1em;
+    grid-gap: 0.5em;
 }
 
 .popularEvents {
@@ -237,6 +237,8 @@ address {
     border-radius: 1em;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
 }
 
 .eventsGird {
@@ -257,7 +259,7 @@ address {
 
 .eventImg img {
     border-radius: 0.8em;
-    max-width: 100%;
+    width: 100%;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
 
@@ -268,4 +270,14 @@ address {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
     text-align: center;
+}
+
+.footer {
+    padding: 1.4em;
+    background-color: #fef1e9;
+    text-align: center;
+}
+
+.footer a {
+    font-weight: 700;
 }
