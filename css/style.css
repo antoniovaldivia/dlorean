@@ -88,7 +88,7 @@ address {
     color: #9d9db4;
 }
 
-/* Is this the best way to do this?*/
+/* Is this the best way to do this? I was thinking in having something like the Twitter's search bar https://imgur.com/CJKWqw2 with the search icon inside the input box*/
 
 .headerSearch input[type="submit"] {
     background-image: url(/img/search.svg);
@@ -110,7 +110,7 @@ address {
     display: none;
 }
 
-/* This class is not working :(*/
+/* This class is not working :( I wanted to make the current page's link bold: https://imgur.com/dNDz0qI */
 
 .navMenu a:active {
     font-weight: 700;
@@ -204,7 +204,7 @@ address {
     grid-gap: 0.5em;
 }
 
-/* How can I crop all the images to have the same size, no matter their original dimensions?*/
+/* How can I crop all the images to have the same size, no matter their original dimensions?: https://imgur.com/z8qXISj*/
 
 .popularTimelinesHeaderGirdImg {
     width: 100%;
@@ -254,7 +254,7 @@ address {
     font-size: 1.1em;
 }
 
-/* Not sure how to create the timeline dots :( */
+/* Not sure how to create the timeline dots :( Like this https://imgur.com/81tR01s */
 
 .dynamicTimelineLine {
     margin-top: 0.5em;
