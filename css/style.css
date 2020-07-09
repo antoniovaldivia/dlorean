@@ -174,7 +174,7 @@ address {
     margin-right: auto;
 }
 
-.frontpageTimeline {
+.timelineBox {
     border: 0.1em solid #f1f2f6;
     border-radius: 1em;
     padding-top: 0.1em;
@@ -197,7 +197,7 @@ address {
     grid-gap: 1em;
 }
 
-.popularTimelinesHeaderGird {
+.timelinesHeaderGird {
     display: grid;
     grid-template-columns: 10.5em 1fr;
     padding: 0.5em;
@@ -205,19 +205,17 @@ address {
 }
 
 /* How can I crop all the images to have the same size, no matter their original dimensions?: https://imgur.com/z8qXISj*/
-
-.popularTimelinesHeaderGirdImg {
+.timelinesHeaderGirdImg {
     width: 100%;
-
 }
 
-.popularTimelinesHeaderGird img {
+.timelinesHeaderGird img {
     border-radius: 0.8em;
     width: 100%;
     max-height: 6em;
 }
 
-.popularTimelinesHeaderGird a {
+.timelinesHeaderGird a {
     font-weight: 700;
 }
 
@@ -254,7 +252,7 @@ address {
     font-size: 1.1em;
 }
 
-/* Not sure how to create the timeline dots :( Like this https://imgur.com/81tR01s */
+/* Not sure how to create the timeline dots :( Like this https://imgur.com/81tR01s Here and in timeline.html*/
 
 .dynamicTimelineLine {
     margin-top: 0.5em;
@@ -264,6 +262,12 @@ address {
     margin-right: auto;
     width: 100%;
     height: 0.7em;
+}
+
+.dynamicTimelineYears li{
+    font-size: 0.7em;
+    font-weight: 700;
+    display: inline-block;
 }
 
 .frontpageTimeline time {
@@ -342,6 +346,31 @@ address {
     font-weight: 700;
 }
 
+.timeline {
+    padding: 0em 0.9em 0em 0.9em;
+}
+
+.timeline h1{
+    font-size: 1.6em;
+}
+
+.timelinesGird {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+.timelineInteractionsGrid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    text-align: right;
+    padding-right: 1em;
+}
+.timelineInteractionsGridButtons li {
+    display: inline-block;
+
+}
+
 @media screen and (min-width: 70em) {
     .headerLogo {
         display: grid;
@@ -383,5 +412,12 @@ address {
     }
     .popularEventsGird {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .timeline h1{
+        font-size: 2em;
+    }
+    .dynamicTimelineYears li{
+        font-size: 1em;
     }
 }
