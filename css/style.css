@@ -191,7 +191,7 @@ address {
     grid-gap: 1em;
 }
 
-.popularEventsGird {
+.EventsGird {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
@@ -395,12 +395,17 @@ address {
 
 /* How can I move this line when the user moves to another section of the page? https://imgur.com/7NsD0aF */
 .timelineMenuGridLine {
-    position: fixed;
+    position: absolute;
     margin-bottom: 0.5em;
     border-radius: 0.8em;
     width: 30%;
     height: 0.5em;
     background-color: #2b2e42;
+}
+
+/* What would be the best way to create the horizontal timeline? https://imgur.com/Cl0T4th  */
+.timelineEventsGridHL {
+    padding-left: 3em;
 }
 
 @media screen and (min-width: 60em) {
@@ -442,7 +447,7 @@ address {
     .popularTimelinesGird {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .popularEventsGird {
+    .EventsGird {
         grid-template-columns: 1fr 1fr 1fr;
     }
     
