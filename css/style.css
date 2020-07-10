@@ -396,7 +396,9 @@ address {
     display: grid;
     grid-template-columns: 1fr 1fr 20em;
     text-align: right;
-    padding-right: 1em;
+    padding-right: 0.5em;
+    margin-top: -0.3em;
+    padding-bottom: 0.2em;
 }
 
 .timelineInteractionsGridButtons li {
@@ -445,7 +447,7 @@ address {
 }
 
 .timelineInfoBox {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 1em;
     border: 0.1em solid #f1f2f6;
     border-radius: 1em;
