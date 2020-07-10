@@ -502,7 +502,7 @@ address {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .timeline h1 {
-        font-size: 2em;
+        font-size: 2.4em;
     }
     .dynamicTimelineYears li {
         font-size: 1em;
@@ -513,5 +513,13 @@ address {
     }
     .timelineEventsGridHL {
         padding-left: 0em;
+    }
+    .timelineInteractionsGridButtons li {
+        display: inline-block;
+        width: 2em;
+    }
+    
+    .timelineInteractionsGridButtons img {
+        max-width: 2em;
     }
 }
