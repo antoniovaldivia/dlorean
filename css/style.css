@@ -240,10 +240,9 @@ address {
 
 .displayChannelGird {
     display: grid;
-    grid-template-columns: 1% 98% 1%;
+    grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
-    grid-gap: 0.3em;
 }
 
 /* How can I crop all the images to have the same size, no matter their original dimensions?: https://imgur.com/z8qXISj*/
@@ -691,6 +690,6 @@ How to handle the months?
         max-width: 2em;
     }
     .displayChannelGird {
-        grid-template-columns: 10% 80% 10%;
+        grid-template-columns: 5% 90% 5%;
     }
 }
