@@ -745,7 +745,9 @@ background-color: #fef1e9;
     .TimelinesEventsGird {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-
+    .channel {
+        padding: 1em;
+    }
     .channelMessageGrid1 {
         display: grid;
         grid-template-columns: 7% 93%;
