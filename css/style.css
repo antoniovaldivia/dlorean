@@ -388,7 +388,7 @@ background-color: #fef1e9;
 
 .TimelinesEventsGird {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.5em;
 }
 
@@ -610,7 +610,7 @@ How to handle the months?
     padding-bottom: 0.5em;
     width: 100%;
     color: #ffffff;
-    margin-left: 0.1em;
+    margin-left: 0.2em;
     margin-right: 0.5em;
     background-color: #b5c0c8;
 
@@ -691,5 +691,9 @@ How to handle the months?
     }
     .displayChannelGird {
         grid-template-columns: 5% 90% 5%;
+    }
+
+    .TimelinesEventsGird {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
