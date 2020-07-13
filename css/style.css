@@ -19,6 +19,16 @@ h1 {
 
 h2 {
     font-size: 1.9em;
+    color: #2b2e42;
+}
+
+
+.popularTimelines h2 {
+    font-size: 1.9em;
+    color: #4c516c;
+}
+.popularEvents h2 {
+    font-size: 1.9em;
     color: #4c516c;
 }
 
@@ -26,7 +36,7 @@ h3 {
     font-family: 'DM Sans', sans-serif;
     font-size: 1.5em;
     font-weight: 700;
-    color: #4c516c;
+    color: #2b2e42;
 }
 
 h4 {
@@ -329,16 +339,17 @@ address {
     display: inline-block;
 }
 
+/* The first last child problem
 .dynamicTimelineYears li:last-child {
     text-align: right;
 }
 .dynamicTimelineYears li:first-child {
     text-align: left;
 }
+*/
 
 .frontpageTimeline time {
     text-transform: uppercase;
-    font-size: 0.9em;
     font-weight: 700;
 }
 
@@ -364,6 +375,24 @@ background-color: #fef1e9;
     grid-gap: 0.5em;
 }
 
+.TimelinesEventsGird {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+}
+
+.TimelinesEventsGird time{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+} 
+
+.popularTimelinesEventsGird time{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+} 
+
 .popularEvents {
     padding: 0.9em;
 }
@@ -374,6 +403,7 @@ background-color: #fef1e9;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
     margin-top: 0.5em;
+    text-align: left;
 }
 
 .eventsGird {
@@ -578,6 +608,13 @@ How to handle the months?
         width: 2em;
     }
     .timelineInteractionsGridButtons img {
+        max-width: 2em;
+    }
+    .displaySingleEventGird {
+        grid-template-columns: 10% 80% 10%;
+        text-align: center;
+    }
+    .displaySingleEventGirdButtons img {
         max-width: 2em;
     }
 }
