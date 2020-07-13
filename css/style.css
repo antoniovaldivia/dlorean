@@ -55,6 +55,10 @@ address {
     font-weight: 400;
 }
 
+:focus {
+    outline-color: #585A87;
+}
+
 .topGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -95,7 +99,7 @@ address {
     border-radius: 0.6em;
     border: 0.1em solid #f1f2f6;
     padding-left: 0.5em;
-    color: #9d9db4;
+    color: #2b2e42;
 }
 
 ::-webkit-input-placeholder {
@@ -232,6 +236,14 @@ address {
     grid-template-columns: 10.5em 1fr;
     padding: 0.5em;
     grid-gap: 0.5em;
+}
+
+.displayChannelGird {
+    display: grid;
+    grid-template-columns: 1% 98% 1%;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 0.3em;
 }
 
 /* How can I crop all the images to have the same size, no matter their original dimensions?: https://imgur.com/z8qXISj*/
@@ -522,6 +534,11 @@ background-color: #fef1e9;
     padding-bottom: 0.1em;
 }
 
+
+.timelineInfoBox a {
+    font-weight: 700;
+}
+
 .timelineInfoBoxGrid {
     padding: 0.5em;
     display: grid;
@@ -544,6 +561,62 @@ How to handle the months?
     text-transform: uppercase;
 }
 */
+
+/* Here if I use ems I got a blanc space in the bottom of the page*/ 
+.channel {
+    border: 0.1em solid #f1f2f6;
+    border-radius: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    margin-top: 0.5em;
+    text-align: left;
+    overflow-y: scroll; 
+    height:30em;
+    padding: 0.5em;
+}
+.channelChatbox {
+    border: 0.1em solid #f1f2f6;
+    border-radius: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    margin-top: 0.5em;
+    text-align: left;
+    padding: 0.5em;
+    background-color: #f4f6f7;
+}
+
+
+.channelChatbox label {
+    display: none;
+}
+.channelChatboxGrid {
+    display: grid;
+    grid-template-columns: 80% 20%
+}
+
+.channelChatbox input {
+    border-radius: 0.6em;
+    border: 0.1em solid #f1f2f6;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    color: #2b2e42;
+}
+
+.channelChatbox button {
+    border-radius: 0.6em;
+    border: 0.1em solid #f1f2f6;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    color: #ffffff;
+    margin-left: 0.1em;
+    margin-right: 0.5em;
+    background-color: #b5c0c8;
+
+}
+
 
 @media screen and (min-width: 60em) {
     .headerLogo {
@@ -616,5 +689,8 @@ How to handle the months?
     }
     .displaySingleEventGirdButtons img {
         max-width: 2em;
+    }
+    .displayChannelGird {
+        grid-template-columns: 10% 80% 10%;
     }
 }
