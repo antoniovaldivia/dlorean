@@ -193,11 +193,29 @@ address {
     grid-gap: 1em;
 }
 
-.popularEventsGird {
+.displayEventsGird {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
 }
+
+.displaySingleEventGird {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 0.3em;
+}
+
+.singleEventContent  {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.3em;
+}
+
+.singleEventContentInfo  {
+    font-size: 1.3em;
+    }
 
 .timelinesHeaderGird {
     display: grid;
@@ -296,10 +314,26 @@ address {
     height: 0.7em;
 }
 
+
+
+.dynamicTimelineYears {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0em;
+    text-align: center;
+}
+
 .dynamicTimelineYears li {
     font-size: 0.7em;
     font-weight: 700;
     display: inline-block;
+}
+
+.dynamicTimelineYears li:last-child {
+    text-align: right;
+}
+.dynamicTimelineYears li:first-child {
+    text-align: left;
 }
 
 .frontpageTimeline time {
@@ -318,6 +352,10 @@ address {
 
 .purple {
     color: #b33771;
+}
+
+.yellowBG {
+background-color: #fef1e9;
 }
 
 .popularTimelinesEventsGird {
@@ -370,8 +408,7 @@ address {
 
 .footer {
     padding: 1.4em;
-    background-color: #fef1e9;
-    text-align: center;
+        text-align: center;
 }
 
 .footer a {
@@ -461,6 +498,23 @@ address {
     grid-template-columns: 1fr;
 }
 
+/*
+How to handle the months?
+.dynamicTimelineMonths {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0em;
+    text-align: center;
+}
+
+.dynamicTimelineMonths li {
+    font-size: 0.7em;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+}
+*/
+
 @media screen and (min-width: 60em) {
     .headerLogo {
         display: grid;
@@ -500,13 +554,16 @@ address {
     .popularTimelinesGird {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .popularEventsGird {
+    .displayEventsGird {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .timeline h1 {
         font-size: 2.4em;
     }
     .dynamicTimelineYears li {
+        font-size: 1em;
+    }
+    .dynamicTimelineMonths li {
         font-size: 1em;
     }
     .timelineInfoBoxGrid {
@@ -520,7 +577,6 @@ address {
         display: inline-block;
         width: 2em;
     }
-    
     .timelineInteractionsGridButtons img {
         max-width: 2em;
     }
