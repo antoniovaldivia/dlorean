@@ -123,12 +123,24 @@ address {
     text-align: center;
 }
 
+
+
 .navMenu {
     display: none;
 }
 
+
 /* This class is not working :( I wanted to make the current page's link bold: https://imgur.com/dNDz0qI */
 .navMenu a:active {
+    color: #2b2e42;
+}
+
+.selected {
+    color: #2b2e42;
+}
+
+.navMenu a {
+    color: #585A87;
     font-weight: 700;
 }
 
@@ -543,25 +555,6 @@ background-color: #fef1e9;
     display: grid;
     grid-template-columns: 1fr;
 }
-
-/*
-How to handle the months?
-.dynamicTimelineMonths {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 0em;
-    text-align: center;
-}
-
-.dynamicTimelineMonths li {
-    font-size: 0.7em;
-    font-weight: 700;
-    display: inline-block;
-    text-transform: uppercase;
-}
-*/
-
-/* Here if I use ems I got a blanc space in the bottom of the page*/ 
 .channel {
     border: 0.1em solid #f1f2f6;
     border-radius: 1em;
@@ -603,6 +596,59 @@ How to handle the months?
     color: #2b2e42;
 }
 
+
+.channelMessageGrid1 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+
+.channelMessageGrid1 img {
+    max-width: 3.5em;
+    text-align: center;
+}
+
+.channelMessageGrid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.channelMessageGrid2 time {
+    color: #9d9db4;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.messageFromYou {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.messageFromOthers span {
+    color: #b33771;
+    font-weight: 700;
+}
+
+.messageFromOthers {
+    text-align: left;
+}
+
+.messageFromYou span {
+    color: #585a87;
+    font-weight: 700;
+}
+
+
+.messageFromYou img{
+    display: none;
+}
+
 .channelChatbox button {
     border-radius: 0.6em;
     border: 0.1em solid #f1f2f6;
@@ -624,9 +670,12 @@ How to handle the months?
     }
     .navMenu {
         display: inline-block;
+
     }
     .navMenu li {
         display: inline-block;
+        padding: 0em 0.1em 0em 0.1em;
+
     }
     .navMenuicon img {
         display: none;
@@ -695,5 +744,14 @@ How to handle the months?
 
     .TimelinesEventsGird {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .channelMessageGrid1 {
+        display: grid;
+        grid-template-columns: 7% 93%;
+        font-size: 1.1em;
+    }
+    .channelMessageGrid1 img{
+        max-width: 3em;
     }
 }
