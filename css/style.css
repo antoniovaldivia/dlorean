@@ -49,6 +49,7 @@ h4 {
 a {
     text-decoration: none;
     color: #2B2E42;
+    font-weight: 700;
 }
 
 address {
@@ -677,6 +678,7 @@ address {
 }
 
 /*How to keep the footer at the bottom of the page always?*/
+
 .container {
     padding: 0.9em;
     margin-bottom: 10em;
@@ -718,6 +720,7 @@ address {
 }
 
 /*How to change the color of the checkbox?*/
+
 .loginForm input[type="checkbox"] {
     color: #2b2e42;
 }
