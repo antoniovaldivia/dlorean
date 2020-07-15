@@ -692,7 +692,7 @@ address {
     margin-top: 1em;
 }
 
-.loginForm input[type="text"], input[type="password"] {
+.loginForm input[type="text"], input[type="password"], input[type="email"] {
     border-radius: 0.6em;
     border: 0.1em solid #f1f2f6;
     padding-left: 0.5em;
