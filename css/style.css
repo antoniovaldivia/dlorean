@@ -679,7 +679,7 @@ address {
 /*How to keep the footer at the bottom of the page always?*/
 .container {
     padding: 0.9em;
-    margin-bottom: 11em;
+    margin-bottom: 10em;
 }
 
 .loginForm li {
