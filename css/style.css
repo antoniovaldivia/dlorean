@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-
 /* Hello Rocco! */
+
 body {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
@@ -22,11 +22,11 @@ h2 {
     color: #2b2e42;
 }
 
-
 .popularTimelines h2 {
     font-size: 1.9em;
     color: #4c516c;
 }
+
 .popularEvents h2 {
     font-size: 1.9em;
     color: #4c516c;
@@ -107,6 +107,7 @@ address {
 }
 
 /* Is this the best way to do this? I was thinking in having something like the Twitter's search bar https://imgur.com/CJKWqw2 with the search icon inside the input box*/
+
 .headerSearch input[type="submit"] {
     background-image: url(/img/search.svg);
     background-color: transparent;
@@ -123,14 +124,12 @@ address {
     text-align: center;
 }
 
-
-
 .navMenu {
     display: none;
 }
 
-
 /* This class is not working :( I wanted to make the current page's link bold: https://imgur.com/dNDz0qI */
+
 .navMenu a:active {
     color: #2b2e42;
 }
@@ -233,15 +232,15 @@ address {
     grid-gap: 0.3em;
 }
 
-.singleEventContent  {
+.singleEventContent {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-size: 1.3em;
 }
 
-.singleEventContentInfo  {
+.singleEventContentInfo {
     font-size: 1.3em;
-    }
+}
 
 .timelinesHeaderGird {
     display: grid;
@@ -258,6 +257,7 @@ address {
 }
 
 /* How can I crop all the images to have the same size, no matter their original dimensions?: https://imgur.com/z8qXISj*/
+
 .timelinesHeaderGirdImg {
     width: 100%;
 }
@@ -273,6 +273,7 @@ address {
 }
 
 /* Not sure if this is the best to display the icons*/
+
 .authorIcon {
     display: inline-block;
     background: url("/img/author.svg") no-repeat;
@@ -337,6 +338,7 @@ address {
 }
 
 /* Not sure how to create the timeline dots :( Like this https://imgur.com/81tR01s Here and in timeline.html*/
+
 .dynamicTimelineLine {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -346,8 +348,6 @@ address {
     width: 100%;
     height: 0.7em;
 }
-
-
 
 .dynamicTimelineYears {
     display: grid;
@@ -389,7 +389,7 @@ address {
 }
 
 .yellowBG {
-background-color: #fef1e9;
+    background-color: #fef1e9;
 }
 
 .popularTimelinesEventsGird {
@@ -404,17 +404,17 @@ background-color: #fef1e9;
     grid-gap: 0.5em;
 }
 
-.TimelinesEventsGird time{
+.TimelinesEventsGird time {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1em;
-} 
+}
 
-.popularTimelinesEventsGird time{
+.popularTimelinesEventsGird time {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1em;
-} 
+}
 
 .popularEvents {
     padding: 0.9em;
@@ -461,7 +461,7 @@ background-color: #fef1e9;
 
 .footer {
     padding: 1.4em;
-        text-align: center;
+    text-align: center;
 }
 
 .footer a {
@@ -522,6 +522,7 @@ background-color: #fef1e9;
 }
 
 /* How can I move this line when the user moves to another section of the page? https://imgur.com/7NsD0aF */
+
 .timelineMenuGridLine {
     position: absolute;
     margin-bottom: 0.5em;
@@ -532,6 +533,7 @@ background-color: #fef1e9;
 }
 
 /* What would be the best way to create the horizontal timeline? https://imgur.com/Cl0T4th  */
+
 .timelineEventsGridHL {
     padding-left: 4em;
 }
@@ -545,7 +547,6 @@ background-color: #fef1e9;
     padding-bottom: 0.1em;
 }
 
-
 .timelineInfoBox a {
     font-weight: 700;
 }
@@ -555,6 +556,7 @@ background-color: #fef1e9;
     display: grid;
     grid-template-columns: 1fr;
 }
+
 .channel {
     border: 0.1em solid #f1f2f6;
     border-radius: 1em;
@@ -562,10 +564,11 @@ background-color: #fef1e9;
     padding-bottom: 0.1em;
     margin-top: 0.5em;
     text-align: left;
-    overflow-y: scroll; 
-    height:30em;
+    overflow-y: scroll;
+    height: 30em;
     padding: 0.5em;
 }
+
 .channelChatbox {
     border: 0.1em solid #f1f2f6;
     border-radius: 1em;
@@ -577,10 +580,10 @@ background-color: #fef1e9;
     background-color: #f4f6f7;
 }
 
-
 .channelChatbox label {
     display: none;
 }
+
 .channelChatboxGrid {
     display: grid;
     grid-template-columns: 80% 20%
@@ -596,7 +599,6 @@ background-color: #fef1e9;
     color: #2b2e42;
 }
 
-
 .channelMessageGrid1 {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -604,7 +606,6 @@ background-color: #fef1e9;
     font-size: 1.1em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-
 }
 
 .channelMessageGrid1 img {
@@ -644,8 +645,7 @@ background-color: #fef1e9;
     font-weight: 700;
 }
 
-
-.messageFromYou img{
+.messageFromYou img {
     display: none;
 }
 
@@ -659,9 +659,68 @@ background-color: #fef1e9;
     margin-left: 0.2em;
     margin-right: 0.5em;
     background-color: #b5c0c8;
-
 }
 
+.containerBox {
+    border: 0.1em solid #f1f2f6;
+    border-radius: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding: 0.9em;
+}
+
+.displayBoxGird {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+/*How to keep the footer at the bottom of the page always?*/
+.container {
+    padding: 0.9em;
+    margin-bottom: 11em;
+}
+
+.loginForm li {
+    margin-top: 1em;
+}
+
+.loginForm buttom {
+    margin-top: 1em;
+}
+
+.loginForm input[type="text"], input[type="password"] {
+    border-radius: 0.6em;
+    border: 0.1em solid #f1f2f6;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #2b2e42;
+    width: 100%;
+}
+
+.loginForm input[type="submit"] {
+    border: 0em solid #f1f2f6;
+    border-radius: 0.8em;
+    background-color: #2b2e42;
+    padding: 0.4em;
+    margin-top: 0.8em;
+    display: block;
+    width: 10em;
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*How to change the color of the checkbox?*/
+.loginForm input[type="checkbox"] {
+    color: #2b2e42;
+}
 
 @media screen and (min-width: 60em) {
     .headerLogo {
@@ -670,12 +729,10 @@ background-color: #fef1e9;
     }
     .navMenu {
         display: inline-block;
-
     }
     .navMenu li {
         display: inline-block;
         padding: 0em 0.1em 0em 0.1em;
-
     }
     .navMenuicon img {
         display: none;
@@ -741,7 +798,9 @@ background-color: #fef1e9;
     .displayChannelGird {
         grid-template-columns: 5% 90% 5%;
     }
-
+    .displayBoxGird {
+        grid-template-columns: 25% 50% 25%;
+    }
     .TimelinesEventsGird {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
@@ -753,7 +812,7 @@ background-color: #fef1e9;
         grid-template-columns: 5% 95%;
         font-size: 1.1em;
     }
-    .channelMessageGrid1 img{
+    .channelMessageGrid1 img {
         max-width: 3em;
     }
 }
