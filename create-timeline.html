@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description"
+            content="DLOREAN is an online tool that lets you create, collaborate on, and publish timelines.">
+        <meta name="author" content="Antonio Valdivia">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>DLOREAN</title>
+    </head>
+
+    <body>
+        <header>
+            <ul class="topGrid">
+                <li class="headerMenu">
+                    <nav class="navMenuicon">
+                        <img src="img/hamburger.svg" alt="Menu icon">
+                        <ul class="navMenu">
+                            <li class="selected"><a href="index.html">Home</a></li>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <li class="headerLogo">
+                    <a href="index.html"><img src="img/dlorean-logo.svg" alt="DLOREAN's app logo"></a>
+                </li>
+                <li class="headerSearch">
+                    <img src="img/search.svg" alt="Search icon">
+                    <form class="headerSearchFrom">
+                        <label>Search</label><input type="search" placeholder="Search">
+                        <input type="submit" value="">
+                    </form>
+                </li>
+            </ul>
+        </header>
+
+        <main class="container">
+            <ul class="displayBoxGird">
+                <li></li>
+                <li>
+                    <section class="containerBox">
+                        <h1>Create timeline</h1>
+                        <p>Let's create your timeline</p>
+                        <form class="loginForm">
+                            <ul>
+                                <li><label>Title</label><input type="text" placeholder="New timeline"></li>
+                                <li><label>Description</label><textarea placeholder="A new cool timeline"></textarea></li>
+                                <li><label>Privacy</label>
+                                    <select>
+                                        <option value="1" selected>Public</option>
+                                        <option value="2">Private</option>
+                                    </select></li>
+                                <li><label>Theme</label>
+                                    <select>
+                                        <option value="1" selected>Purple</option>
+                                    </select></li>
+                                <li><label>Image</label><img src="/img/image.svg" alt="Timeline's image"></li>
+                                <li><input type="submit" name="submit" value="Create timeline"></li>
+                            </ul>
+                        </form>
+                    </section>
+                </li>
+                <li></li>
+            </ul>
+
+        </main>
+
+        <footer class="footer purpleBG">
+            <p>&copy; <a href="/">DLOREAN</a></p>
+            <p>W3C Validated</p>
+        </footer>
+
+    </body>
+
+</html>
