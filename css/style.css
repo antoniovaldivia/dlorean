@@ -133,6 +133,7 @@ address {
 
 .navMenu a:active {
     color: #2b2e42;
+    font-weight: 700;
 }
 
 .selected {
@@ -141,7 +142,7 @@ address {
 
 .navMenu a {
     color: #585A87;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .navMenu a:hover {
