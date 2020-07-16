@@ -737,6 +737,9 @@ address {
     margin-bottom: 0.2em;
 }
 
+.attachments img {
+    max-width: 1em;
+}
 
 @media screen and (min-width: 60em) {
     .headerLogo {
