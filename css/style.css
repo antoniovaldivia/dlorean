@@ -150,7 +150,7 @@ address {
 }
 
 .masthead img {
-    margin-top: 2em;
+    margin-top: 1.5em;
     max-width: 13em;
 }
 
@@ -714,7 +714,7 @@ address {
 @media screen and (min-width: 60em) {
 
     h1 {
-        font-size: 1.7em;
+        font-size: 1.6em;
     }
 
     h3 {
@@ -748,7 +748,7 @@ address {
         font-size: 0.9em;
     }
     .masthead {
-        min-height: 20em;
+        height: 19.5em;
     }
     .masthead-grid {
         grid-template-columns: 1fr 1fr;
