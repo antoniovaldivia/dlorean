@@ -1,40 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-/* Hello Rocco! */
 
 body {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     background-color: #ffffff;
+    height: 100%;
 }
 
 h1, h2 {
     font-family: 'Nunito', sans-serif;
     font-size: 2em;
-}
-
-h1 {
     color: #2b2e42;
-}
-
-h2 {
-    font-size: 1.9em;
-    color: #2b2e42;
-}
-
-.popularTimelines h2 {
-    font-size: 1.9em;
-    color: #4c516c;
-}
-
-.popularEvents h2 {
-    font-size: 1.9em;
-    color: #4c516c;
 }
 
 h3 {
     font-family: 'DM Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 700;
     color: #2b2e42;
 }
@@ -56,104 +38,106 @@ address {
     font-weight: 400;
 }
 
+::-webkit-input-placeholder {
+    color: #9d9db4;
+}
+
 :focus {
     outline-color: #585A87;
 }
 
-.topGrid {
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.homepage-h2 {
+    font-size: 1.9em;
+    color: #4c516c;
+}
+
+.top-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     margin: 0.8em;
 }
 
-.headerMenu img {
+.header-menu-item {
     max-width: 1.4em;
 }
 
-.headerLogo {
+.header-logo {
     text-align: center;
 }
 
-.headerLogo img {
+.header-logo img {
     max-width: 11em;
 }
 
-.headerSearch {
+.header-search {
     text-align: right;
     padding-left: 2em;
 }
 
-.headerSearchFrom {
+.header-search-from {
     display: none;
 }
 
-.headerSearch img {
+.header-search img {
     max-width: 1.3em;
 }
 
-.headerSearch label {
+.header-search label {
     display: none;
 }
 
-.headerSearch input {
+.header-search input {
     border-radius: 0.6em;
     border: 0.1em solid #f1f2f6;
     padding-left: 0.5em;
     color: #2b2e42;
-}
-
-::-webkit-input-placeholder {
-    color: #9d9db4;
-}
-
-/* Is this the best way to do this? I was thinking in having something like the Twitter's search bar https://imgur.com/CJKWqw2 with the search icon inside the input box*/
-
-.headerSearch input[type="submit"] {
     background-image: url(/img/search.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    background-position: 0 0;
-    border: none;
-    cursor: pointer;
-    height: 16px;
-    padding-left: 16px;
-    vertical-align: middle;
+    background-position: 0.5em;
+    background-size: auto 0.9em;
+    padding: 0.2em 0.2em 0.2em 1.8em;
 }
 
-.textAlignCenter {
-    text-align: center;
+.header-search-bar {
+    background-image: url(/img/search.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0.5em;
+    background-size: auto 1em;
+    padding: 0.5em 0.5em 0.5em 2.5em;
 }
 
-.navMenu {
+.nav-menu {
     display: none;
 }
 
-/* This class is not working :( I wanted to make the current page's link bold: https://imgur.com/dNDz0qI */
-
-.navMenu a:active {
+.nav-menu .selected a {
     color: #2b2e42;
     font-weight: 700;
 }
 
-.selected {
-    color: #2b2e42;
-}
-
-.navMenu a {
+.nav-menu-anchor a {
     color: #585A87;
     font-weight: 500;
 }
 
-.navMenu a:hover {
+.nav-menu a:hover {
     color: #b33771;
 }
 
-.navMenuicon {
+.nav-menu-icon {
     display: block;
 }
 
-.displayNone {
+.display-none {
     display: none;
 }
 
@@ -167,12 +151,12 @@ address {
     max-width: 13em;
 }
 
-.mastheadGrid {
+.masthead-grid {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.mastheadCTA {
+.masthead-cta {
     font-size: 1.1em;
     text-align: left;
     font-weight: 500;
@@ -180,14 +164,14 @@ address {
     margin-bottom: 0.7em;
 }
 
-.linkDlorean {
+.link-dlorean {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     color: #2b2e42;
 }
 
-.linkCTA {
+.link-cta {
     border-radius: 0.8em;
     background-color: #2b2e42;
     padding: 0.4em;
@@ -203,24 +187,24 @@ address {
     margin-right: auto;
 }
 
-.timelineBox {
+.timeline-box {
     border: 0.1em solid #f1f2f6;
     border-radius: 1em;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
 }
 
-.popularTimelines {
+.popular-timelines {
     padding: 0.9em;
 }
 
-.popularTimelinesGird {
+.popular-timelines-gird {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
 }
 
-.displayEventsGird {
+.display-events-gird {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
@@ -244,9 +228,9 @@ address {
     font-size: 1.3em;
 }
 
-.timelinesHeaderGird {
+.timelines-header-gird {
     display: grid;
-    grid-template-columns: 10.5em 1fr;
+    grid-template-columns: 5em 1fr;
     padding: 0.5em;
     grid-gap: 0.5em;
 }
@@ -260,23 +244,19 @@ address {
 
 /* How can I crop all the images to have the same size, no matter their original dimensions?: https://imgur.com/z8qXISj*/
 
-.timelinesHeaderGirdImg {
-    width: 100%;
+.timelines-header-gird-img {
+    width: 5em;
 }
 
-.timelinesHeaderGird img {
+.timelines-header-gird-img-file {
     border-radius: 0.8em;
     width: 100%;
-    max-height: 6em;
+    height: 100%;
+    object-fit: cover;
+    height: 5em;
 }
 
-.timelinesHeaderGird a {
-    font-weight: 700;
-}
-
-/* Not sure if this is the best to display the icons*/
-
-.authorIcon {
+.author-icon {
     display: inline-block;
     background: url("/img/author.svg") no-repeat;
     height: 0.9em;
@@ -284,7 +264,7 @@ address {
     padding-left: 1.1em;
 }
 
-.locationIcon {
+.location-icon {
     display: inline-block;
     background: url("/img/location.svg") no-repeat;
     height: 0.9em;
@@ -292,7 +272,7 @@ address {
     padding-left: 1.1em;
 }
 
-.watchIcon {
+.watch-icon {
     display: inline-block;
     background: url("/img/watch.svg") no-repeat;
     height: 0.9em;
@@ -300,7 +280,7 @@ address {
     padding-left: 1.1em;
 }
 
-.contributorsIcon {
+.contributors-icon {
     display: inline-block;
     background: url("/img/contributors.svg") no-repeat;
     height: 0.9em;
@@ -308,7 +288,7 @@ address {
     padding-left: 1.1em;
 }
 
-.createdIcon {
+.created-icon {
     display: inline-block;
     background: url("/img/created.svg") no-repeat;
     height: 0.9em;
@@ -316,7 +296,7 @@ address {
     padding-left: 1.1em;
 }
 
-.publicIcon {
+.public-icon {
     display: inline-block;
     background: url("/img/public.svg") no-repeat;
     height: 0.9em;
@@ -324,7 +304,7 @@ address {
     padding-left: 1.1em;
 }
 
-.privateIcon {
+.private-icon {
     display: inline-block;
     background: url("/img/private.svg") no-repeat;
     height: 0.9em;
@@ -332,16 +312,17 @@ address {
     padding-left: 1.1em;
 }
 
-.dynamicTimeline {
+.dynamic-timeline {
     margin: 0em 0.5em 0.5em 0.5em;
     border-radius: 0.8em;
     padding: 0.8em;
     font-size: 1.1em;
+
 }
 
 /* Not sure how to create the timeline dots :( Like this https://imgur.com/81tR01s Here and in timeline.html*/
 
-.dynamicTimelineLine {
+.dynamic-timeline-line {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     border-radius: 0.8em;
@@ -351,38 +332,24 @@ address {
     height: 0.7em;
 }
 
-.dynamicTimelineYears {
+.dynamic-timelineYears {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 0em;
     text-align: center;
 }
 
-.dynamicTimelineYears li {
+.dynamic-timelineYears li {
     font-size: 0.7em;
     font-weight: 700;
     display: inline-block;
 }
 
-/* The first last child problem
-.dynamicTimelineYears li:last-child {
-    text-align: right;
-}
-.dynamicTimelineYears li:first-child {
-    text-align: left;
-}
-*/
-
-.frontpageTimeline time {
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.purpleBG {
+.purple-background {
     background-color: #f4e1ea;
 }
 
-.purpleLine {
+.purple-line {
     background-color: #d38bac;
 }
 
@@ -390,11 +357,11 @@ address {
     color: #b33771;
 }
 
-.yellowBG {
+.yellow-background {
     background-color: #fef1e9;
 }
 
-.popularTimelinesEventsGird {
+.popular-timelines-events-gird {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.5em;
@@ -412,13 +379,13 @@ address {
     font-size: 1em;
 }
 
-.popularTimelinesEventsGird time {
+.popular-timelines-events-gird time {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1em;
 }
 
-.popularEvents {
+.popular-events {
     padding: 0.9em;
 }
 
@@ -431,14 +398,14 @@ address {
     text-align: left;
 }
 
-.eventsGird {
+.events-gird {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     padding: 0.5em;
 }
 
-.eventsGird a {
+.events-gird a {
     font-weight: 700;
 }
 
@@ -447,14 +414,14 @@ address {
     font-weight: 700;
 }
 
-.eventImg img {
+.event-img img {
     border-radius: 0.8em;
     width: 100%;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
 }
 
-.eventInteractionsGrid {
+.event-interactions-grid {
     display: none;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
@@ -688,6 +655,10 @@ address {
     margin-bottom: 3em;
 }
 
+.flex-grow  {
+flex-grow: 1;
+}
+
 .loginForm li {
     margin-top: 1em;
 }
@@ -743,55 +714,56 @@ address {
 }
 
 @media screen and (min-width: 60em) {
-    .headerLogo {
-        display: grid;
-        grid-template-columns: 1fr;
+    h3 {
+        font-size: 1.6em;
     }
-    .navMenu {
+    
+
+    .nav-menu {
         display: inline-block;
     }
-    .navMenu li {
+    .nav-menu li {
         display: inline-block;
         padding: 0em 0.1em 0em 0.1em;
     }
-    .navMenuicon img {
+    .nav-menu-icon img {
         display: none;
     }
-    .headerSearchFrom {
+    .header-search-from {
         display: block;
     }
-    .headerSearch img {
+    .header-menu-item {
         display: none;
     }
-    .popularTimelines {
+    .popular-timelines {
         font-size: 0.9em;
     }
     .event {
         font-size: 0.9em;
     }
-    .mastheadGrid {
+    .masthead-grid {
         grid-template-columns: 1fr 1fr;
     }
-    .mastheadCTA {
+    .masthead-cta {
         margin-right: 6.5em;
         font-size: 1.4em;
         text-align: center;
         font-weight: 500;
         padding: 3em 0;
     }
-    .popularTimelinesGird {
+    .popular-timelines-gird {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .displayEventsGird {
+    .display-events-gird {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .timeline h1 {
         font-size: 2.4em;
     }
-    .dynamicTimelineYears li {
+    .dynamic-timelineYears li {
         font-size: 1em;
     }
-    .dynamicTimelineMonths li {
+    .dynamic-timelineMonths li {
         font-size: 1em;
     }
     .timelineInfoBoxGrid {

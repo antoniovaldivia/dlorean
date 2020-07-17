@@ -14,383 +14,390 @@
     </head>
 
     <body>
-        <header>
-            <ul class="topGrid">
-                <li class="headerMenu">
-                    <nav class="navMenuicon">
-                        <img src="img/hamburger.svg" alt="Menu icon">
-                        <ul class="navMenu">
-                            <li class="selected"><a href="index.html">Home</a></li>
-                            <li><a href="#">Sign in</a></li>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </li>
-                <li class="headerLogo">
-                    <a href="index.html"><img src="img/dlorean-logo.svg" alt="DLOREAN's app logo"></a>
-                </li>
-                <li class="headerSearch">
-                    <img src="img/search.svg" alt="Search icon">
-                    <form class="headerSearchFrom">
-                        <label>Search</label><input type="search" placeholder="Search">
-                        <input type="submit" value="">
-                    </form>
-                </li>
-            </ul>
-        </header>
-
-        <main>
-            <section class="masthead">
-                <ul class="mastheadGrid">
+        <div class="layout">
+            <header>
+                <ul class="top-grid">
                     <li>
-                        <img src="img/wrist-watch-illusrtated.svg" alt="A wrist watch illustrated">
+                        <nav class="nav-menu-icon">
+                            <img src="img/hamburger.svg" alt="Menu icon" class="header-menu-item">
+                            <ul class="nav-menu nav-menu-anchor">
+                                <li class="selected"><a href="index.html">Home</a></li>
+                                <li><a href="#">Sign in</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
                     </li>
-                    <li class="mastheadCTA">
-                        <h1>When are you?</h1>
-                        <p><a href="/" class="linkDlorean">DLOREAN</a> is an online tool that lets you create, collaborate
-                            on, and publish timelines.</p>
-                        <p><a href="#" class="linkCTA">Get started</a></p>
+                    <li class="header-logo">
+                        <a href="index.html"><img src="img/dlorean-logo.svg" alt="DLOREAN's app logo"></a>
+                    </li>
+                    <li class="header-search">
+                        <img src="img/search.svg" alt="Search icon" class="header-menu-item">
+                        <form class="header-search-from">
+                            <label class="display-none">Search</label><input type="search" placeholder="Search"
+                                class="header-search-bar">
+                        </form>
                     </li>
                 </ul>
-            </section>
-            <section class="popularTimelines">
-                <h2>Popular timelines</h2>
-                <!-- Popular timeline number 1 -->
-                <ul class="popularTimelinesGird">
-                    <li>
-                        <article class="timelineBox">
-                            <header>
-                                <ul class="timelinesHeaderGird">
-                                    <li class="timelinesHeaderGirdImg">
-                                        <a href="timeline.html"><img src="img/demo/toronto.jpg"
-                                                alt="An image from 180 years of Toronto history"></a>
+            </header>
+
+            <main class="flex-grow">
+                <section class="masthead">
+                    <ul class="masthead-grid">
+                        <li>
+                            <img src="img/wrist-watch-illusrtated.svg" alt="A wrist watch illustrated">
+                        </li>
+                        <li class="masthead-cta">
+                            <h1>When are you?</h1>
+                            <p><a href="/" class="link-dlorean">DLOREAN</a> is an online tool that lets you create,
+                                collaborate
+                                on, and publish timelines.</p>
+                            <p><a href="#" class="link-cta">Get started</a></p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="popular-timelines">
+                    <h2 class="homepage-h2">Popular timelines</h2>
+                    <!-- Popular timeline number 1 -->
+                    <ul class="popular-timelines-gird">
+                        <li>
+                            <article class="timeline-box">
+                                <header>
+                                    <ul class="timelines-header-gird">
+                                        <li class="timelines-header-gird-img">
+                                            <a href="timeline.html"><img src="img/demo/toronto.jpg"
+                                                    alt="An image from 180 years of Toronto history"
+                                                    class="timelines-header-gird-img-file"></a>
+                                        </li>
+                                        <li>
+                                            <h3><a href="timeline.html">180 years of Toronto history</a></h3>
+                                            <p><span class="author-icon"></span>By <a href="#">ctvnews</a></p>
+                                        </li>
+                                    </ul>
+                                </header>
+                                <ul class="dynamic-timeline purple-background">
+                                    <li>
+                                        <p>CTV Toronto looks back on major events in city’s past:</p>
                                     </li>
                                     <li>
-                                        <h3><a href="timeline.html">180 years of Toronto history</a></h3>
-                                        <p><span class="authorIcon"></span>By <a href="#">ctvnews</a></p>
-                                    </li>
-                                </ul>
-                            </header>
-                            <ul class="dynamicTimeline purpleBG">
-                                <li>
-                                    <p>CTV Toronto looks back on major events in city’s past:</p>
-                                </li>
-                                <li>
-                                    <div class="dynamicTimelineLine purpleLine"></div>
-                                </li>
-                                <li>
-                                    <ul class="displayNone">
-                                        <li><time datetime="1834"><span>1834</span></time></li>
-                                        <li><time datetime="1837"><span>1837</span></time></li>
-                                        <li><time datetime="1841"><span>1841</span></time></li>
-                                        <li><time datetime="1881"><span>1881</span></time></li>
-                                        <li><time datetime="1889"><span>1889</span></time></li>
-                                        <li><time datetime="1903"><span>1903</span></time></li>
-                                        <li><time datetime="1910"><span>1910</span></time></li>
-                                        <li><time datetime="1941"><span>1941</span></time></li>
-                                        <li><time datetime="1950"><span>1950</span></time></li>
-                                        <li><time datetime="1960"><span>1960</span></time></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="popularTimelinesEventsGird">
-                                        <li>
-                                            <article>
-                                                <header>
-                                                    <time class="purple" datetime="1834-03-06">Mar 6,
-                                                        <span>1834</span></time>
-                                                    <h4>Town of York becomes City of Toronto</h4>
-                                                </header>
-                                            </article>
-                                        </li>
-                                        <li>
-                                            <article>
-                                                <header>
-                                                    <time class="purple" datetime="1837-11-01">Nov 1,
-                                                        <span>1837</span></time>
-                                                    <h4>Gooderham and Worts Distillery established</h4>
-                                                </header>
-                                            </article>
-                                        </li>
-                                        <li>
-                                            <article>
-                                                <header>
-                                                    <time class="purple" datetime="1841-01-01">Jan 1,
-                                                        <span>1841</span></time>
-                                                    <h4>First gas powered lamps installed</h4>
-                                                </header>
-                                            </article>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </article>
-                    </li>
-                    <!-- Popular timeline number 2 -->
-                    <li>
-                        <article class="timelineBox">
-                            <header>
-                                <ul class="timelinesHeaderGird">
-                                    <li class="timelinesHeaderGirdImg">
-                                        <a href="#"><img src="img/demo/internet.jpg"
-                                                alt="An image from the Internet History"></a>
+                                        <div class="dynamic-timeline-line purple-line"></div>
                                     </li>
                                     <li>
-                                        <h3><a href="#">Internet History Timeline</a></h3>
-                                        <p><span class="authorIcon"></span>By <a href="#">kimannzummermann</a></p>
+                                        <ul class="display-none">
+                                            <li><time datetime="1834"><span>1834</span></time></li>
+                                            <li><time datetime="1837"><span>1837</span></time></li>
+                                            <li><time datetime="1841"><span>1841</span></time></li>
+                                            <li><time datetime="1881"><span>1881</span></time></li>
+                                            <li><time datetime="1889"><span>1889</span></time></li>
+                                            <li><time datetime="1903"><span>1903</span></time></li>
+                                            <li><time datetime="1910"><span>1910</span></time></li>
+                                            <li><time datetime="1941"><span>1941</span></time></li>
+                                            <li><time datetime="1950"><span>1950</span></time></li>
+                                            <li><time datetime="1960"><span>1960</span></time></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="popular-timelines-events-gird">
+                                            <li>
+                                                <article>
+                                                    <header>
+                                                        <time class="purple" datetime="1834-03-06">Mar 6,
+                                                            <span>1834</span></time>
+                                                        <h4>Town of York becomes City of Toronto</h4>
+                                                    </header>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article>
+                                                    <header>
+                                                        <time class="purple" datetime="1837-11-01">Nov 1,
+                                                            <span>1837</span></time>
+                                                        <h4>Gooderham and Worts Distillery established</h4>
+                                                    </header>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article>
+                                                    <header>
+                                                        <time class="purple" datetime="1841-01-01">Jan 1,
+                                                            <span>1841</span></time>
+                                                        <h4>First gas powered lamps installed</h4>
+                                                    </header>
+                                                </article>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
-                            </header>
-                            <ul class="dynamicTimeline purpleBG">
-                                <li>
-                                    <p>From ARPANET to the World Wide Web</p>
-                                </li>
-                                <li>
-                                    <div class="dynamicTimelineLine purpleLine"></div>
-                                </li>
-                                <li>
-                                    <ul class="displayNone">
-                                        <li><time datetime="1965"><span>1965</span></time></li>
-                                        <li><time datetime="1968"><span>1968</span></time></li>
-                                        <li><time datetime="1969"><span>1969</span></time></li>
-                                        <li><time datetime="1970"><span>1970</span></time></li>
-                                        <li><time datetime="1971"><span>1971</span></time></li>
-                                        <li><time datetime="1972"><span>1972</span></time></li>
-                                        <li><time datetime="1973"><span>1973</span></time></li>
-                                        <li><time datetime="1974"><span>1974</span></time></li>
-                                        <li><time datetime="1975"><span>1975</span></time></li>
-                                        <li><time datetime="1976"><span>1976</span></time></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="popularTimelinesEventsGird">
-                                        <li>
-                                            <article>
-                                                <header>
-                                                    <time class="purple" datetime="1965-01-21">Jan 21,
-                                                        <span>1965</span></time>
-                                                    <h4>Two computers at MIT communicate with one another using
-                                                        packet-switching
-                                                        technology</h4>
-                                                </header>
-                                            </article>
+                            </article>
+                        </li>
+                        <!-- Popular timeline number 2 -->
+                        <li>
+                            <article class="timeline-box">
+                                <header>
+                                    <ul class="timelines-header-gird">
+                                        <li class="timelines-header-gird-img">
+                                            <a href="#"><img src="img/demo/internet.jpg"
+                                                    alt="An image from the Internet History"
+                                                    class="timelines-header-gird-img-file"></a>
                                         </li>
                                         <li>
-                                            <article>
-                                                <header>
-                                                    <time class="purple" datetime="1968-02-14">Feb 14,
-                                                        <span>1968</span></time>
-                                                    <h4>BBN unveils the final version of the Interface Message Processor
-                                                        (IMP)
-                                                        specifications</h4>
-                                                </header>
-                                            </article>
-                                        </li>
-                                        <li>
-                                            <article>
-                                                <header>
-                                                    <time class="purple" datetime="1969-02-14">Oct 29,
-                                                        <span>1969</span></time>
-                                                    <h4>UCLA’s Network Measurement Center, Stanford Research Institute,
-                                                        University…</h4>
-                                                </header>
-                                            </article>
+                                            <h3><a href="#">Internet History Timeline</a></h3>
+                                            <p><span class="author-icon"></span>By <a href="#">kimannzummermann</a></p>
                                         </li>
                                     </ul>
-                                </li>
-                            </ul>
-                        </article>
-                    </li>
-                    <!-- Popular timeline number 3 -->
-                    <li>
-                        <article class="timelineBox">
-                            <header>
-                                <ul class="timelinesHeaderGird">
-                                    <li class="timelinesHeaderGirdImg">
+                                </header>
+                                <ul class="dynamic-timeline purple-background">
+                                    <li>
+                                        <p>From ARPANET to the World Wide Web</p>
+                                    </li>
+                                    <li>
+                                        <div class="dynamic-timeline-line purple-line"></div>
+                                    </li>
+                                    <li>
+                                        <ul class="display-none">
+                                            <li><time datetime="1965"><span>1965</span></time></li>
+                                            <li><time datetime="1968"><span>1968</span></time></li>
+                                            <li><time datetime="1969"><span>1969</span></time></li>
+                                            <li><time datetime="1970"><span>1970</span></time></li>
+                                            <li><time datetime="1971"><span>1971</span></time></li>
+                                            <li><time datetime="1972"><span>1972</span></time></li>
+                                            <li><time datetime="1973"><span>1973</span></time></li>
+                                            <li><time datetime="1974"><span>1974</span></time></li>
+                                            <li><time datetime="1975"><span>1975</span></time></li>
+                                            <li><time datetime="1976"><span>1976</span></time></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="popular-timelines-events-gird">
+                                            <li>
+                                                <article>
+                                                    <header>
+                                                        <time class="purple" datetime="1965-01-21">Jan 21,
+                                                            <span>1965</span></time>
+                                                        <h4>Two computers at MIT communicate with one another using
+                                                            packet-switching
+                                                            technology</h4>
+                                                    </header>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article>
+                                                    <header>
+                                                        <time class="purple" datetime="1968-02-14">Feb 14,
+                                                            <span>1968</span></time>
+                                                        <h4>BBN unveils the final version of the Interface Message Processor
+                                                            (IMP)
+                                                            specifications</h4>
+                                                    </header>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article>
+                                                    <header>
+                                                        <time class="purple" datetime="1969-02-14">Oct 29,
+                                                            <span>1969</span></time>
+                                                        <h4>UCLA’s Network Measurement Center, Stanford Research Institute,
+                                                            University…</h4>
+                                                    </header>
+                                                </article>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <!-- Popular timeline number 3 -->
+                        <li>
+                            <article class="timeline-box">
+                                <header>
+                                    <ul class="timelines-header-gird">
+                                        <li class="timelines-header-gird-img">
+                                            <a href="#"><img src="img/demo/michael-scott.jpg"
+                                                    alt="An image from Timeline of The Office (Dunder Mifflin Scranton’s branch)"
+                                                    class="timelines-header-gird-img-file"></a>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">Timeline of The Office (Dunder Mifflin Scranton’s branch)</a>
+                                            </h3>
+                                            <p><span class="authorIcon"></span>By <a href="#">michaelscott</a></p>
+                                        </li>
+                                    </ul>
+                                </header>
+                                <ul class="dynamic-timeline purple-background">
+                                    <li>
+                                        <p>A brief history of the mockumentary sitcom television series</p>
+                                    </li>
+                                    <li>
+                                        <div class="dynamic-timeline-line purple-line"></div>
+                                    </li>
+                                    <li>
+                                        <ul class="display-none">
+                                            <li><time datetime="1946"><span>1946</span></time></li>
+                                            <li><time datetime="1992"><span>1992</span></time></li>
+                                            <li><time datetime="1999"><span>1999</span></time></li>
+                                            <li><time datetime="2000"><span>2000</span></time></li>
+                                            <li><time datetime="2000"><span>2000</span></time></li>
+                                            <li><time datetime="2000"><span>2000</span></time></li>
+                                            <li><time datetime="2001"><span>2001</span></time></li>
+                                            <li><time datetime="2002"><span>2002</span></time></li>
+                                            <li><time datetime="2002"><span>2002</span></time></li>
+                                            <li><time datetime="2003"><span>2003</span></time></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="popular-timelines-events-gird">
+                                            <li>
+                                                <article>
+                                                    <header>
+                                                        <time class="purple" datetime="1946-08-16">Aug 16,
+                                                            <span>1946</span></time>
+                                                        <h4>Dunder Mifflin Paper Company was founded</h4>
+                                                    </header>
+
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article>
+                                                    <header>
+                                                        <time class="purple" datetime="1992-03-15">Mar 15,
+                                                            <span>1992</span></time>
+                                                        <h4>Michael Scott is hired at Dunder Mifflin as a salesman</h4>
+                                                    </header>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article>
+                                                    <header>
+                                                        <time class="purple" datetime="1999-09-29">Sep 09,
+                                                            <span>1999</span></time>
+                                                        <h4>First Dundies Awards</h4>
+                                                    </header>
+                                                </article>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+                <section class="popular-events">
+                    <h2 class="homepage-h2">Popular events</h2>
+                    <!-- Popular event number 1 -->
+                    <ul class="display-events-gird">
+                        <li>
+                            <article class="event">
+                                <ul class="events-gird">
+                                    <li>
+                                        <header class="event-header">
+                                            <time class="purple" datetime="1969-07-20">Jul 20, <span>1969</span></time>
+                                            <a href="#">
+                                                <h3>One Giant Leap For Mankind: The First Person on the Moon</h3>
+                                            </a>
+                                            <address><span class="location-icon"></span>The Moon</address>
+                                            <p><span class="watch-icon"></span> <a href="#">Lunar Timeline: Humanity’s
+                                                    Exploration of
+                                                    the Moon</a></p>
+                                        </header>
+                                    </li>
+                                    <li class="event-img">
+                                        <a href="#"><img src="img/demo/man-on-the-moon.jpg"
+                                                alt="An image of One Giant Leap For Mankind: The First Person on the Moon"></a>
+                                    </li>
+                                    <li>
+                                        <footer>
+                                            <ul class="event-interactions-grid">
+                                                <li>
+                                                    <p>Likes</p>
+                                                </li>
+                                                <li>
+                                                    <p>Comments</p>
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <li>
+                            <!-- Popular event number 2 -->
+                            <article class="event">
+                                <ul class="events-gird">
+                                    <li>
+                                        <header class="event-header">
+                                            <time class="purple" datetime="2001-05-22">May 22, <span>2001</span></time>
+                                            <a href="#">
+                                                <h3>Bitcoin Pizza Day</h3>
+                                            </a>
+                                            <address><span class="location-icon"></span>Florida</address>
+                                            <p><span class="watch-icon"></span> <a href="#">History of Bitcoin</a></p>
+                                        </header>
+                                    </li>
+                                    <li class="event-img">
+                                        <a href="#"><img src="img/demo/bitcoin-pizza.png"
+                                                alt="An image of Bitcoin Pizza Day"></a>
+                                    </li>
+                                    <li>
+                                        <footer>
+                                            <ul class="event-interactions-grid">
+                                                <li>
+                                                    <p>Comments</p>
+                                                </li>
+                                                <li>
+                                                    <p>Likes</p>
+                                                </li>
+                                            </ul>
+                                        </footer>
+                                    </li>
+                                </ul>
+                            </article>
+                        </li>
+                        <!-- Popular event number 3 -->
+                        <li>
+                            <article class="event">
+                                <ul class="events-gird">
+                                    <li>
+                                        <header class="event-header">
+                                            <time class="purple" datetime="1992-03-15">Mar 15, <span>1992</span></time>
+                                            <a href="#">
+                                                <h3>Michael Scott is hired at Dunder Mifflin as a salesman</h3>
+                                            </a>
+                                            <address><span class="location-icon"></span>Scranton, Pennsylvania</address>
+                                            <p><span class="watch-icon"></span> <a href="#">Timeline of The Office (Dunder
+                                                    Mifflin
+                                                    Scranton’s branch)</a></p>
+                                        </header>
+                                    </li>
+                                    <li class="event-img">
                                         <a href="#"><img src="img/demo/michael-scott.jpg"
-                                                alt="An image from Timeline of The Office (Dunder Mifflin Scranton’s branch)"></a>
+                                                alt="An image of Michael Scott is hired at Dunder Mifflin as a salesman"></a>
                                     </li>
                                     <li>
-                                        <h3><a href="#">Timeline of The Office (Dunder Mifflin Scranton’s branch)</a></h3>
-                                        <p><span class="authorIcon"></span>By <a href="#">michaelscott</a></p>
+                                        <footer>
+                                            <ul class="event-interactions-grid">
+                                                <li>
+                                                    <p>Likes</p>
+                                                </li>
+                                                <li>
+                                                    <p>Comments</p>
+                                                </li>
+                                            </ul>
+                                        </footer>
                                     </li>
                                 </ul>
-                            </header>
-                            <ul class="dynamicTimeline purpleBG">
-                                <li>
-                                    <p>A brief history of the mockumentary sitcom television series</p>
-                                </li>
-                                <li>
-                                    <div class="dynamicTimelineLine purpleLine"></div>
-                                </li>
-                                <li>
-                                    <ul class="displayNone">
-                                        <li><time datetime="1946"><span>1946</span></time></li>
-                                        <li><time datetime="1992"><span>1992</span></time></li>
-                                        <li><time datetime="1999"><span>1999</span></time></li>
-                                        <li><time datetime="2000"><span>2000</span></time></li>
-                                        <li><time datetime="2000"><span>2000</span></time></li>
-                                        <li><time datetime="2000"><span>2000</span></time></li>
-                                        <li><time datetime="2001"><span>2001</span></time></li>
-                                        <li><time datetime="2002"><span>2002</span></time></li>
-                                        <li><time datetime="2002"><span>2002</span></time></li>
-                                        <li><time datetime="2003"><span>2003</span></time></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="popularTimelinesEventsGird">
-                                        <li>
-                                            <article>
-                                                <header>
-                                                    <time class="purple" datetime="1946-08-16">Aug 16,
-                                                        <span>1946</span></time>
-                                                    <h4>Dunder Mifflin Paper Company was founded</h4>
-                                                </header>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+            </main>
 
-                                            </article>
-                                        </li>
-                                        <li>
-                                            <article>
-                                                <header>
-                                                    <time class="purple" datetime="1992-03-15">Mar 15,
-                                                        <span>1992</span></time>
-                                                    <h4>Michael Scott is hired at Dunder Mifflin as a salesman</h4>
-                                                </header>
-                                            </article>
-                                        </li>
-                                        <li>
-                                            <article>
-                                                <header>
-                                                    <time class="purple" datetime="1999-09-29">Sep 09,
-                                                        <span>1999</span></time>
-                                                    <h4>First Dundies Awards</h4>
-                                                </header>
-                                            </article>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </article>
-                    </li>
-                </ul>
-            </section>
-            <section class="popularEvents">
-                <h2>Popular events</h2>
-                <!-- Popular event number 1 -->
-                <ul class="displayEventsGird">
-                    <li>
-                        <article class="event">
-                            <ul class="eventsGird">
-                                <li>
-                                    <header class="eventHeader">
-                                        <time class="purple" datetime="1969-07-20">Jul 20, <span>1969</span></time>
-                                        <a href="#">
-                                            <h3>One Giant Leap For Mankind: The First Person on the Moon</h3>
-                                        </a>
-                                        <address><span class="locationIcon"></span>The Moon</address>
-                                        <p><span class="watchIcon"></span>From <a href="#">Lunar Timeline: Humanity’s
-                                                Exploration of
-                                                the Moon</a></p>
-                                    </header>
-                                </li>
-                                <li class="eventImg">
-                                    <a href="#"><img src="img/demo/man-on-the-moon.jpg"
-                                            alt="An image of One Giant Leap For Mankind: The First Person on the Moon"></a>
-                                </li>
-                                <li>
-                                    <footer>
-                                        <ul class="eventInteractionsGrid">
-                                            <li>
-                                                <p>Likes</p>
-                                            </li>
-                                            <li>
-                                                <p>Comments</p>
-                                            </li>
-                                        </ul>
-                                    </footer>
-                                </li>
-                            </ul>
-                        </article>
-                    </li>
-                    <li>
-                        <!-- Popular event number 2 -->
-                        <article class="event">
-                            <ul class="eventsGird">
-                                <li>
-                                    <header class="eventHeader">
-                                        <time class="purple" datetime="2001-05-22">May 22, <span>2001</span></time>
-                                        <a href="#">
-                                            <h3>Bitcoin Pizza Day</h3>
-                                        </a>
-                                        <address><span class="locationIcon"></span>Florida</address>
-                                        <p><span class="watchIcon"></span>From <a href="#">History of Bitcoin</a></p>
-                                    </header>
-                                </li>
-                                <li class="eventImg">
-                                    <a href="#"><img src="img/demo/bitcoin-pizza.png"
-                                            alt="An image of Bitcoin Pizza Day"></a>
-                                </li>
-                                <li>
-                                    <footer>
-                                        <ul class="eventInteractionsGrid">
-                                            <li>
-                                                <p>Comments</p>
-                                            </li>
-                                            <li>
-                                                <p>Likes</p>
-                                            </li>
-                                        </ul>
-                                    </footer>
-                                </li>
-                            </ul>
-                        </article>
-                    </li>
-                    <!-- Popular event number 3 -->
-                    <li>
-                        <article class="event">
-                            <ul class="eventsGird">
-                                <li>
-                                    <header class="eventHeader">
-                                        <time class="purple" datetime="1992-03-15">Mar 15, <span>1992</span></time>
-                                        <a href="#">
-                                            <h3>Michael Scott is hired at Dunder Mifflin as a salesman</h3>
-                                        </a>
-                                        <address><span class="locationIcon"></span>Scranton, Pennsylvania</address>
-                                        <p><span class="watchIcon"></span>From <a href="#">Timeline of The Office (Dunder
-                                                Mifflin
-                                                Scranton’s branch)</a></p>
-                                    </header>
-                                </li>
-                                <li class="eventImg">
-                                    <a href="#"><img src="img/demo/michael-scott.jpg"
-                                            alt="An image of Michael Scott is hired at Dunder Mifflin as a salesman"></a>
-                                </li>
-                                <li>
-                                    <footer>
-                                        <ul class="eventInteractionsGrid">
-                                            <li>
-                                                <p>Likes</p>
-                                            </li>
-                                            <li>
-                                                <p>Comments</p>
-                                            </li>
-                                        </ul>
-                                    </footer>
-                                </li>
-                            </ul>
-                        </article>
-                    </li>
-                </ul>
-            </section>
-        </main>
+            <footer class="footer yellow-background">
+                <p>&copy; <a href="/">DLOREAN</a></p>
+                <p>W3C Validated</p>
+            </footer>
 
-        <footer class="footer yellowBG">
-            <p>&copy; <a href="/">DLOREAN</a></p>
-            <p>W3C Validated</p>
-        </footer>
-
+        </div>
     </body>
 
 </html>
