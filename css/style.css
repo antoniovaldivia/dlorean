@@ -8,10 +8,19 @@ body {
     height: 100%;
 }
 
+
 h1, h2 {
     font-family: 'Nunito', sans-serif;
-    font-size: 2em;
     color: #2b2e42;
+}
+
+h1 {
+    font-size: 1.9em;
+    line-height: 1.1em;
+}
+
+h2 {
+    font-size: 1.7em;
 }
 
 h3 {
