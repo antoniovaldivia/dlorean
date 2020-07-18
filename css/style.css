@@ -19,6 +19,8 @@ h1 {
 
 h2 {
     font-size: 1.7em;
+    line-height: 1.1em;
+
 }
 
 h3 {
@@ -128,7 +130,7 @@ address {
 }
 
 .nav-menu-anchor a {
-    color: #585A87;
+    color: #585a87;
     font-weight: 500;
 }
 
@@ -201,19 +203,19 @@ address {
     padding: 0.9em;
 }
 
-.popular-timelines-gird {
+.popular-timelines-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
 }
 
-.display-events-gird {
+.display-events-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
 }
 
-.displaySingleEventGird {
+.display-single-event-grid {
     display: grid;
     grid-template-columns: 5% 90% 5%;
     align-items: center;
@@ -221,35 +223,41 @@ address {
     grid-gap: 0.3em;
 }
 
-.singleEventContent {
+.single-event-content {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-size: 1.3em;
 }
 
-.singleEventContentInfo {
+.single-event-content-info {
     font-size: 1.3em;
 }
 
-.timelines-header-gird {
+.timelines-header-grid {
     display: grid;
-    grid-template-columns: 1fr 5em;
+    grid-template-columns: 5em 1fr;
     padding: 0.5em;
     grid-gap: 0.5em;
 }
 
-.displayChannelGird {
+.timeline-description {
+    padding: 0.6em;
+    margin-top: -0.4em;
+    font-size: 1.1em;
+}
+
+.display-channel-grid {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
 }
 
-.timelines-header-gird-img {
+.timelines-header-grid-img {
     width: 5em;
 }
 
-.timelines-header-gird-img-file {
+.timelines-header-grid-img-file {
     border-radius: 0.8em;
     width: 100%;
     height: 100%;
@@ -316,14 +324,13 @@ address {
 .dynamic-timeline {
     margin: 0em 0.5em 0.5em 0.5em;
     border-radius: 0.8em;
-    padding: 0.8em;
+    padding: 1.5em;
     font-size: 1.1em;
+    min-height: 5.1em;
 }
 
-/* Not sure how to create the timeline dots :( Like this https://imgur.com/81tR01s Here and in timeline.html*/
-
 .dynamic-timeline-line {
-    margin-top: 0.5em;
+    margin-top: 0.2em;
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
@@ -343,24 +350,19 @@ address {
     margin-left: -0.3em;
 }
 
+.dynamic-timeline-line-dot time {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-top: 1.8em;
+    margin-left: -0.8em;
+}
+
 .active-dot {
     height: 1em;
     width: 1em;
     border: 0.15em solid white;
-    top: -0.1em;
-}
-
-.dynamic-timelineYears {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 0em;
-    text-align: center;
-}
-
-.dynamic-timelineYears li {
-    font-size: 0.7em;
-    font-weight: 700;
-    display: inline-block;
+    top: -0.15em;
 }
 
 .purple-background {
@@ -379,25 +381,25 @@ address {
     background-color: #fef1e9;
 }
 
-.popular-timelines-events-gird {
+.popular-timelines-events-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.5em;
 }
 
-.TimelinesEventsGird {
+.timelines-events-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.5em;
 }
 
-.TimelinesEventsGird time {
+.timelines-events-grid time {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1em;
 }
 
-.popular-timelines-events-gird time {
+.popular-timelines-events-grid time {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1em;
@@ -414,19 +416,43 @@ address {
     padding-bottom: 0.1em;
     margin-top: 0.5em;
     text-align: left;
+    padding: 0.9em;
 }
 
-.events-gird {
+
+.events-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    padding: 0.5em;
+    position: relative;
+
 }
 
-.events-gird a {
+.events-grid a {
     font-weight: 700;
 }
 
+.events-grid-dot {
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  background-color: #b33771;
+  position: absolute;
+  margin-left: -3.5em;
+  margin-top: -1em;
+}
+
+.events-grid-dot-line {
+    width: 1em;
+    height: 117%;
+    background-color: #d38bac;
+    position: absolute;
+    margin-left: -3.5em;
+    margin-top: -0.3em;
+    z-index: -1;
+    
+}  
+  
 .event time {
     text-transform: uppercase;
     font-weight: 700;
@@ -463,13 +489,13 @@ address {
     font-size: 1.6em;
 }
 
-.timelinesGird {
+.timelines-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
 }
 
-.timelineInteractionsGrid1 {
+.timeline-interactions-grid-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 20em;
     text-align: right;
@@ -478,16 +504,16 @@ address {
     padding-bottom: 0.2em;
 }
 
-.timelineInteractionsGridButtons li {
+.timeline-interactions-grid-buttons li {
     display: inline-block;
     width: 2.4em;
 }
 
-.timelineInteractionsGridButtons img {
+.timeline-interactions-grid-buttons img {
     max-width: 2.4em;
 }
 
-.timelineMenuGrid {
+.timeline-menu-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
@@ -498,7 +524,7 @@ address {
     font-size: 1.2em;
 }
 
-.timelineMenuGridLineBG {
+.timeline-menu-grid-line-background {
     margin-bottom: 0.5em;
     border-radius: 0.8em;
     margin-left: auto;
@@ -508,9 +534,7 @@ address {
     background-color: #F1F2F6;
 }
 
-/* How can I move this line when the user moves to another section of the page? https://imgur.com/7NsD0aF */
-
-.timelineMenuGridLine {
+.timeline-menu-grid-line {
     position: absolute;
     margin-bottom: 0.5em;
     border-radius: 0.8em;
@@ -519,13 +543,11 @@ address {
     background-color: #2b2e42;
 }
 
-/* What would be the best way to create the horizontal timeline? https://imgur.com/Cl0T4th  */
-
-.timelineEventsGridHL {
+.timeline-events-grid-hl {
     padding-left: 4em;
 }
 
-.timelineInfoBox {
+.timeline-info-box {
     margin-top: 1em;
     margin-bottom: 1em;
     border: 0.1em solid #f1f2f6;
@@ -534,11 +556,11 @@ address {
     padding-bottom: 0.1em;
 }
 
-.timelineInfoBox a {
+.timeline-info-box a {
     font-weight: 700;
 }
 
-.timelineInfoBoxGrid {
+.timeline-info-box-grid {
     padding: 0.5em;
     display: grid;
     grid-template-columns: 1fr;
@@ -556,7 +578,7 @@ address {
     padding: 0.5em;
 }
 
-.channelChatbox {
+.channel-chatbox {
     border: 0.1em solid #f1f2f6;
     border-radius: 1em;
     padding-top: 0.1em;
@@ -567,16 +589,16 @@ address {
     background-color: #f4f6f7;
 }
 
-.channelChatbox label {
+.channel-chatbox label {
     display: none;
 }
 
-.channelChatboxGrid {
+.channel-chatbox-grid {
     display: grid;
     grid-template-columns: 80% 20%
 }
 
-.channelChatbox input {
+.channel-chatbox input {
     border-radius: 0.6em;
     border: 0.1em solid #f1f2f6;
     padding-left: 0.5em;
@@ -586,7 +608,7 @@ address {
     color: #2b2e42;
 }
 
-.channelMessageGrid1 {
+.channel-message-grid-1 {
     display: grid;
     grid-template-columns: 20% 80%;
     text-align: center;
@@ -595,48 +617,48 @@ address {
     margin-bottom: 0.5em;
 }
 
-.channelMessageGrid1 img {
+.channel-message-grid-1 img {
     max-width: 3.5em;
     text-align: center;
 }
 
-.channelMessageGrid2 {
+.channel-message-grid-2 {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.channelMessageGrid2 time {
+.channel-message-grid-2 time {
     color: #9d9db4;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 0.8em;
 }
 
-.messageFromYou {
+.message-from-you {
     text-align: right;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
-.messageFromOthers span {
+.message-from-others span {
     color: #b33771;
     font-weight: 700;
 }
 
-.messageFromOthers {
+.message-from-others {
     text-align: left;
 }
 
-.messageFromYou span {
+.message-from-you span {
     color: #585a87;
     font-weight: 700;
 }
 
-.messageFromYou img {
+.message-from-you img {
     display: none;
 }
 
-.channelChatbox button {
+.channel-chatbox button {
     border-radius: 0.6em;
     border: 0.1em solid #f1f2f6;
     padding-top: 0.5em;
@@ -648,7 +670,7 @@ address {
     background-color: #b5c0c8;
 }
 
-.containerBox {
+.container-box {
     border: 0.1em solid #f1f2f6;
     border-radius: 1em;
     padding-top: 0.1em;
@@ -656,14 +678,14 @@ address {
     padding: 0.9em;
 }
 
-.displayBoxGird {
+.display-box-grid {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
 }
 
-.marginTop {
+.margin-top {
     margin-top: 1em;
 }
 
@@ -676,15 +698,15 @@ address {
     flex-grow: 1;
 }
 
-.loginForm li {
+.login-form li {
     margin-top: 1em;
 }
 
-.loginForm buttom {
+.login-form buttom {
     margin-top: 1em;
 }
 
-.loginForm input[type="text"], input[type="password"], input[type="email"], textarea, select, input[type="date"], input[type="time"], input[type="file"] {
+.login-form input[type="text"], input[type="password"], input[type="email"], textarea, select, input[type="date"], input[type="time"], input[type="file"] {
     border-radius: 0.6em;
     border: 0.1em solid #f1f2f6;
     padding-left: 0.5em;
@@ -694,7 +716,7 @@ address {
     width: 100%;
 }
 
-.loginForm input[type="submit"] {
+.login-form input[type="submit"] {
     border: 0em solid #f1f2f6;
     border-radius: 0.8em;
     background-color: #2b2e42;
@@ -712,9 +734,12 @@ address {
     margin-bottom: 0.5em;
 }
 
+
+
+
 /*How to change the color of the checkbox?*/
 
-.loginForm input[type="checkbox"] {
+.login-form input[type="checkbox"] {
     color: #2b2e42;
 }
 
@@ -729,12 +754,25 @@ address {
     max-width: 1em;
 }
 
+.display-event {
+    display: none;
+}
+
 @media screen and (min-width: 60em) {
     h1 {
         font-size: 1.6em;
     }
     h3 {
         font-size: 1.6em;
+    }
+    .timelines-header-grid {
+        grid-template-columns: 10em 1fr;
+    }
+    .timelines-header-grid-img {
+        width: 10em;
+    }
+    .display-event {
+        display: block;
     }
     .link-cta {
         font-size: 0.9em;
@@ -774,66 +812,74 @@ address {
         font-weight: 500;
         padding: 1.5em 0;
     }
-    .popular-timelines-gird {
+    .popular-timelines-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .display-events-gird {
+    .display-events-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .timeline h1 {
         font-size: 2.4em;
     }
-    .dynamic-timelineYears li {
+    .dynamic-timeline-years li {
         font-size: 1em;
     }
-    .dynamic-timelineMonths li {
+    .dynamic-timeline-months li {
         font-size: 1em;
     }
-    .timelineInfoBoxGrid {
+    .timeline-info-box-grid {
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
     }
-    .timelineEventsGridHL {
+    .timeline-events-grid-hl {
         padding-left: 0em;
     }
-    .timelineInteractionsGridButtons li {
+    .timeline-interactions-grid-buttons li {
         display: inline-block;
         width: 2em;
+        margin-top: 0.1em;
+        margin-bottom: 0.2em;
     }
-    .timelineInteractionsGridButtons img {
+    .timeline-interactions-grid-buttons img {
         max-width: 2em;
     }
-    .displaySingleEventGird {
-        grid-template-columns: 10% 80% 10%;
+    .display-single-event-grid {
+        grid-template-columns: 15% 70% 15%;
         text-align: center;
     }
-    .displaySingleEventGirdButtons img {
+    .display-single-event-grid-buttons img {
         max-width: 2em;
     }
-    .displayChannelGird {
+    .display-channel-grid {
         grid-template-columns: 5% 90% 5%;
     }
-    .displayBoxGird {
+    .display-box-grid {
         grid-template-columns: 25% 50% 25%;
     }
-    .TimelinesEventsGird {
+    .timelines-events-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .channel {
         padding: 1em;
     }
-    .channelMessageGrid1 {
+    .channel-message-grid-1 {
         display: grid;
         grid-template-columns: 5% 95%;
         font-size: 1.1em;
     }
-    .channelMessageGrid1 img {
+    .channel-message-grid-1 img {
         max-width: 3em;
     }
     .active-dot {
         border: 0.16em solid white;
-
     }
+    .events-grid-dot {
+        display: none;
+    }
+    .events-grid-dot-line {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 80em) {
