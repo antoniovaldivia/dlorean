@@ -14,373 +14,348 @@
     </head>
 
     <body>
-        <header>
-            <ul class="top-grid">
-                <li>
-                    <nav class="nav-menu-icon">
-                        <img src="img/hamburger.svg" alt="Menu icon" class="header-menu-item">
-                        <ul class="nav-menu nav-menu-anchor">
-                            <li class="selected"><a href="index.html">Home</a></li>
-                            <li><a href="#">Sign in</a></li>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </li>
-                <li class="header-logo">
-                    <a href="index.html"><img src="img/dlorean-logo.svg" alt="DLOREAN's app logo"></a>
-                </li>
-                <li class="header-search">
-                    <img src="img/search.svg" alt="Search icon" class="header-menu-item">
-                    <form class="header-search-from">
-                        <label class="display-none">Search</label><input type="search" placeholder="Search" class="header-search-bar">
-                    </form>
-                </li>
-            </ul>
-        </header>
+        <div class="layout">
+            <header>
+                <ul class="top-grid">
+                    <li>
+                        <nav class="nav-menu-icon">
+                            <img src="img/hamburger.svg" alt="Menu icon" class="header-menu-item">
+                            <ul class="nav-menu nav-menu-anchor">
+                                <li class="selected"><a href="index.html">Home</a></li>
+                                <li><a href="#">Sign in</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="header-logo">
+                        <a href="index.html"><img src="img/dlorean-logo.svg" alt="DLOREAN's app logo"></a>
+                    </li>
+                    <li class="header-search">
+                        <img src="img/search.svg" alt="Search icon" class="header-menu-item">
+                        <form class="header-search-from">
+                            <label class="display-none">Search</label><input type="search" placeholder="Search"
+                                class="header-search-bar">
+                        </form>
+                    </li>
+                </ul>
+            </header>
 
-        <main class="timeline">
-            <ul class="timelinesGird">
-                <li>
-                    <article class="timelineBox">
-                        <header>
-                            <ul class="timelines-header-gird">
-                                <li class="timelines-header-girdImg">
-                                    <a href="#"><img src="img/demo/toronto.jpg"
-                                            alt="An image from 180 years of Toronto history"></a>
+            <main class="timeline flex-grow">
+                <ul class="timelines-grid">
+                    <li>
+                        <article class="timeline-box">
+                            <header>
+                                <ul class="timelines-header-grid">
+
+                                    <li class="timelines-header-grid-img">
+                                        <a href="#"><img src="img/demo/toronto.jpg"
+                                                alt="An image from 180 years of Toronto history"
+                                                class="timelines-header-grid-img-file"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h1>180 years of Toronto history</h1>
+                                        </a>
+                                        <p><span class="author-icon"></span>By <a href="#">ctvnews</a></p>
+                                    </li>
+                                </ul>
+                                <p class="timeline-description">CTV Toronto looks back on major events in city’s past:</p>
+
+                            </header>
+                            <ul class="dynamic-timeline purple-background">
+                                <li>
+                                    <div class="dynamic-timeline-line purple-line">
+                                        <ul>
+                                            <li style="left: 0%;" class="dynamic-timeline-line-dot active-dot">
+                                                <time class="purple" datetime="1834-03-06">
+                                                    <span>1834</span></time>
+                                            </li>
+                                            <li style="left: 25%;" class="dynamic-timeline-line-dot active-dot">
+                                                <time class="purple" datetime="1834-03-06">
+                                                    <span>1870</span></time>
+                                            </li>
+                                            <li style="left: 50%;" class="dynamic-timeline-line-dot active-dot">
+                                                <time class="purple" datetime="1834-03-06">
+                                                    <span>1890</span></time>
+                                            </li>
+                                            <li style="left: 75%;" class="dynamic-timeline-line-dot">
+                                                <time class="purple" datetime="1834-03-06">
+                                                    <span>1900</span></time>
+                                            </li>
+                                            <li style="left: 100%;" class="dynamic-timeline-line-dot ">
+                                                <time class="purple" datetime="1834-03-06">
+                                                    <span>1920</span></time>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <h1>180 years of Toronto history</h1>
-                                    </a>
-                                    <p><span class="authorIcon"></span>By <a href="#">ctvnews</a></p>
+                                    <ul class="timelines-events-grid">
+                                        <li>
+                                        </li>
+
+                                    </ul>
                                 </li>
                             </ul>
-                        </header>
-                        <ul class="dynamicTimeline purpleBG">
+                            <footer>
+                                <ul class="timeline-interactions-grid-1">
+                                    <li></li>
+                                    <li></li>
+
+                                    <li>
+                                        <ul class="timeline-interactions-grid-buttons">
+                                            <li>
+                                                <a href="#"><img src="img/add-event-purple.svg" alt="Add a new event"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="img/add-contributors-purple.svg"
+                                                        alt="Invite a contributor"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="img/clone-timeline-purple.svg"
+                                                        alt="Clone this timeline"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="img/share-timeline-purple.svg"
+                                                        alt="Share this timeline"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="img/edit-timeline-purple.svg"
+                                                        alt="Edit this timeline"></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </footer>
+
+                        </article>
+                    </li>
+
+                </ul>
+
+                <nav class="timeline-menu">
+                    <ul class="timeline-menu-grid">
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="channel.html">Channel</a></li>
+                    </ul>
+                    <div class="timeline-menu-grid-line-background">
+                        <div class="timeline-menu-grid-line">
+                        </div>
+                    </div>
+                </nav>
+                <ul class="display-channel-grid">
+                    <li>
+
+                    </li>
+                    <li>
+                        <ul class="channel">
                             <li>
-                                <p>CTV Toronto looks back on major events in city’s past:</p>
+                                <ul class="channel-message-grid-1 message-from-others">
+                                    <li><a href="#"><img src="img/default-profile-image.svg"
+                                                alt="An image from 180 years of Toronto history"></a></li>
+                                    <li>
+                                        <ul class="channel-message-grid-2">
+                                            <li>
+                                                <p><span>username1</span> <time datetime="2020-06-22 08:30:45">Jun
+                                                        22, 2020
+                                                        08:30am</time> </p>
+                                            </li>
+                                            <li>
+                                                <p>Happy Monday I hope you have a wonderful week!</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                <div class="dynamicTimelineLine purpleLine"></div>
+                                <ul class="channel-message-grid-1 message-from-others">
+                                    <li><a href="#"><img src="img/default-profile-image.svg"
+                                                alt="Profile picture of username2"></a></li>
+                                    <li>
+                                        <ul class="channel-message-grid-2">
+                                            <li>
+                                                <p><span>username2</span> <time datetime="2020-06-22 08:30:45">Jun
+                                                        22, 2020
+                                                        08:30am</time></p>
+                                            </li>
+                                            <li>
+                                                <p>Hello, guys! How are you?</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <ul class="channel-message-grid-1 message-from-you">
+                                    <li><a href="#"><img src="img/default-profile-image.svg"
+                                                alt="Profile picture of username3"></a></li>
+                                    <li>
+                                        <ul class="channel-message-grid-2">
+                                            <li>
+                                                <p><span>username3</span> <time datetime="2020-06-22 08:30:45">Jun
+                                                        22, 2020
+                                                        08:30am</time></p>
+                                            </li>
+                                            <li>
+                                                <p>Hey!</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+
+                            <li>
+                                <ul class="channel-message-grid-1 message-from-others">
+                                    <li><a href="#"><img src="img/default-profile-image.svg"
+                                                alt="Profile picture of username2"></a></li>
+                                    <li>
+                                        <ul class="channel-message-grid-2">
+                                            <li>
+                                                <p><span>username2</span> <time datetime="2020-06-22 08:30:45">Jun
+                                                        22, 2020
+                                                        08:30am</time> </p>
+                                            </li>
+                                            <li>
+                                                <p>I think we should add to the timeline the rename of the SkyDome
+                                                    in 2004.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <ul class="channel-message-grid-1 message-from-you">
+                                    <li><a href="#"><img src="img/default-profile-image.svg"
+                                                alt="Profile picture of username3"></a></li>
+                                    <li>
+                                        <ul class="channel-message-grid-2">
+                                            <li>
+                                                <p><span>username3</span> <time datetime="2020-06-22 08:30:45">Jun
+                                                        22, 2020
+                                                        08:30am</time></p>
+                                            </li>
+                                            <li>
+                                                <p>Of course!</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                <ul class="TimelinesEventsGird">
+                                <ul class="channel-message-grid-1 message-from-others">
+                                    <li><a href="#"><img src="img/default-profile-image.svg"
+                                                alt="Profile picture of username3"></a></li>
                                     <li>
-                                        <article>
-                                            <header>
-                                                <time class="purple" datetime="1834-03-06">Mar 6,
-                                                    <span>1834</span></time>
-                                                <h4>Town of York becomes City of Toronto</h4>
-                                            </header>
-                                        </article>
+                                        <ul class="channel-message-grid-2">
+                                            <li>
+                                                <p><span>username1</span> <time datetime="2020-06-22 08:30:45">Jun
+                                                        22, 2020
+                                                        08:30am</time></p>
+                                            </li>
+                                            <li>
+                                                <p>I will be posting new events to the timeline today!</p>
+                                            </li>
+                                        </ul>
                                     </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <ul class="channel-message-grid-1 message-from-you">
+                                    <li><a href="#"><img src="img/default-profile-image.svg"
+                                                alt="Profile picture of username3"></a></li>
                                     <li>
-                                        <article>
-                                            <header>
-                                                <time class="purple" datetime="1837-11-01">Nov 1,
-                                                    <span>1837</span></time>
-                                                <h4>Gooderham and Worts Distillery established</h4>
-                                            </header>
-                                        </article>
-                                    </li>
-                                    <li>
-                                        <article>
-                                            <header>
-                                                <time class="purple" datetime="1841-01-01">Jan 1,
-                                                    <span>1841</span></time>
-                                                <h4>First gas powered lamps installed</h4>
-                                            </header>
-                                        </article>
-                                    </li>
-                                    <li>
-                                        <article>
-                                            <header>
-                                                <time class="purple" datetime="1846-12-19">Dec 19,
-                                                    <span>1846</span></time>
-                                                <h4>First telegraph sent from Toronto</h4>
-                                            </header>
-                                        </article>
-                                    </li>
-                                    <li>
-                                        <article>
-                                            <header>
-                                                <time class="purple" datetime="1856-10-27">Oct 27,
-                                                    <span>1856
-                                                    </span></time>
-                                                <h4>Rail route from Montreal to Toronto opens</h4>
-                                            </header>
-                                        </article>
-                                    </li>
-                                    <li>
-                                        <article>
-                                            <header>
-                                                <time class="purple" datetime="1858-04-14">Apr 14,
-                                                    <span>1858</span></time>
-                                                <h4>Toronto Islands are formed</h4>
-                                            </header>
-                                        </article>
+                                        <ul class="channel-message-grid-2">
+                                            <li>
+                                                <p><span>username3</span> <time datetime="2020-06-22 08:30:45">Jun
+                                                        22, 2020
+                                                        08:30am</time></p>
+                                            </li>
+                                            <li>
+                                                <p>In 1849, after a lengthy and heated debate, the newly elected
+                                                    responsible
+                                                    government of the Province of Canada voted to rename King’s
+                                                    College as
+                                                    the
+                                                    University of Toronto and severed the school’s ties with the
+                                                    church.
+                                                    Having
+                                                    anticipated this decision, the enraged Strachan had resigned a
+                                                    year
+                                                    earlier
+                                                    to open Trinity College as a private Anglican seminary.
+                                                    University
+                                                    College
+                                                    was created as the nondenominational teaching branch of the
+                                                    University
+                                                    of
+                                                    Toronto. During the American Civil War, the threat of Union
+                                                    blockade on
+                                                    British North America prompted the creation of the University
+                                                    Rifle
+                                                    Corps,
+                                                    which saw battle in resisting the Fenian raids on the Niagara
+                                                    border in
+                                                    1866. The Corps was part of the Reserve Militia lead by
+                                                    Professor Henry
+                                                    Croft.</p>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
-                        <footer>
-                            <ul class="timelineInteractionsGrid1">
-                                <li></li>
-                                <li></li>
-
-                                <li>
-                                    <ul class="timelineInteractionsGridButtons">
-                                        <li>
-                                            <a href="#"><img src="img/add-event-purple.svg" alt="Add a new event"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="img/add-contributors-purple.svg"
-                                                    alt="Invite a contributor"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="img/clone-timeline-purple.svg"
-                                                    alt="Clone this timeline"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="img/share-timeline-purple.svg"
-                                                    alt="Share this timeline"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="img/edit-timeline-purple.svg"
-                                                    alt="Edit this timeline"></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </footer>
-                    </article>
-                </li>
-            </ul>
-            <nav class="timelineMenu">
-                <ul class="timelineMenuGrid">
-                    <li><a href="timeline.html">Timeline</a></li>
-                    <li><a href="event.html">Events</a></li>
-                    <li><a href="channel.html">Channel</a></li>
+                    <li>
+                    </li>
                 </ul>
-                <div class="timelineMenuGridLineBG">
-                    <div class="timelineMenuGridLine">
-                    </div>
-                </div>
-            </nav>
-            <ul class="displayChannelGird">
-                <li>
-
-                </li>
-                <li>
-                    <ul class="channel">
-                        <li>
-                            <ul class="channelMessageGrid1 messageFromOthers">
-                                <li><a href="#"><img src="img/default-profile-image.svg"
-                                            alt="An image from 180 years of Toronto history"></a></li>
-                                <li>
-                                    <ul class="channelMessageGrid2">
-                                        <li>
-                                            <p><span>username1</span> <time datetime="2020-06-22 08:30:45">Jun
-                                                    22, 2020
-                                                    08:30am</time> </p>
-                                        </li>
-                                        <li>
-                                            <p>Happy Monday I hope you have a wonderful week!</p>
-                                        </li>
-                                    </ul>
+                <ul class="display-channel-grid">
+                    <li>
+                    </li>
+                    <li>
+                        <form class="channel-chatbox">
+                            <label>Chatbox</label>
+                            <ul class="channel-chatbox-grid">
+                                <li><input type="text" placeholder="Type a message"></li>
+                                <li><button type="button">Send</button>
                                 </li>
                             </ul>
+                        </form>
+                    </li>
+
+                    <li>
+                    </li>
+                </ul>
+                <footer class="timeline-info-box">
+                    <ul class="timeline-info-box-grid">
+                        <li>
+                            <p><span class="watchIcon"></span><a href="#">180 years of Toronto history</a></p>
+                            <p><span class="createdIcon"></span>Created on <time datetime="2020-06-22"><span>Jun 22,
+                                        2020</span></time></p>
                         </li>
                         <li>
-                            <ul class="channelMessageGrid1 messageFromOthers">
-                                <li><a href="#"><img src="img/default-profile-image.svg"
-                                            alt="Profile picture of username2"></a></li>
-                                <li>
-                                    <ul class="channelMessageGrid2">
-                                        <li>
-                                            <p><span>username2</span> <time datetime="2020-06-22 08:30:45">Jun
-                                                    22, 2020
-                                                    08:30am</time></p>
-                                        </li>
-                                        <li>
-                                            <p>Hello, guys! How are you?</p>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul class="channelMessageGrid1 messageFromYou">
-                                <li><a href="#"><img src="img/default-profile-image.svg"
-                                            alt="Profile picture of username3"></a></li>
-                                <li>
-                                    <ul class="channelMessageGrid2">
-                                        <li>
-                                            <p><span>username3</span> <time datetime="2020-06-22 08:30:45">Jun
-                                                    22, 2020
-                                                    08:30am</time></p>
-                                        </li>
-                                        <li>
-                                            <p>Hey!</p>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-
-                        </li>
-
-                        <li>
-                            <ul class="channelMessageGrid1 messageFromOthers">
-                                <li><a href="#"><img src="img/default-profile-image.svg"
-                                            alt="Profile picture of username2"></a></li>
-                                <li>
-                                    <ul class="channelMessageGrid2">
-                                        <li>
-                                            <p><span>username2</span> <time datetime="2020-06-22 08:30:45">Jun
-                                                    22, 2020
-                                                    08:30am</time> </p>
-                                        </li>
-                                        <li>
-                                            <p>I think we should add to the timeline the rename of the SkyDome
-                                                in 2004.
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-
-                        <li>
-                            <ul class="channelMessageGrid1 messageFromYou">
-                                <li><a href="#"><img src="img/default-profile-image.svg"
-                                            alt="Profile picture of username3"></a></li>
-                                <li>
-                                    <ul class="channelMessageGrid2">
-                                        <li>
-                                            <p><span>username3</span> <time datetime="2020-06-22 08:30:45">Jun
-                                                    22, 2020
-                                                    08:30am</time></p>
-                                        </li>
-                                        <li>
-                                            <p>Of course!</p>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <p><span class="authorIcon"></span>By <a href="#">ctvnews</a></p>
+                            <p><span class="contributorsIcon"></span>Contributors: cityoftoronto, archivestoronto
+                            </p>
                         </li>
                         <li>
-                            <ul class="channelMessageGrid1 messageFromOthers">
-                                <li><a href="#"><img src="img/default-profile-image.svg"
-                                            alt="Profile picture of username3"></a></li>
-                                <li>
-                                    <ul class="channelMessageGrid2">
-                                        <li>
-                                            <p><span>username1</span> <time datetime="2020-06-22 08:30:45">Jun
-                                                    22, 2020
-                                                    08:30am</time></p>
-                                        </li>
-                                        <li>
-                                            <p>I will be posting new events to the timeline today!</p>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-
-                        <li>
-                            <ul class="channelMessageGrid1 messageFromYou">
-                                <li><a href="#"><img src="img/default-profile-image.svg"
-                                            alt="Profile picture of username3"></a></li>
-                                <li>
-                                    <ul class="channelMessageGrid2">
-                                        <li>
-                                            <p><span>username3</span> <time datetime="2020-06-22 08:30:45">Jun
-                                                    22, 2020
-                                                    08:30am</time></p>
-                                        </li>
-                                        <li>
-                                            <p>In 1849, after a lengthy and heated debate, the newly elected
-                                                responsible
-                                                government of the Province of Canada voted to rename King’s
-                                                College as
-                                                the
-                                                University of Toronto and severed the school’s ties with the
-                                                church.
-                                                Having
-                                                anticipated this decision, the enraged Strachan had resigned a
-                                                year
-                                                earlier
-                                                to open Trinity College as a private Anglican seminary.
-                                                University
-                                                College
-                                                was created as the nondenominational teaching branch of the
-                                                University
-                                                of
-                                                Toronto. During the American Civil War, the threat of Union
-                                                blockade on
-                                                British North America prompted the creation of the University
-                                                Rifle
-                                                Corps,
-                                                which saw battle in resisting the Fenian raids on the Niagara
-                                                border in
-                                                1866. The Corps was part of the Reserve Militia lead by
-                                                Professor Henry
-                                                Croft.</p>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <p><span class="publicIcon"></span>Public timeline</p>
                         </li>
                     </ul>
-                <li>
-                </li>
-            </ul>
-            <ul class="displayChannelGird">
-                <li>
-                </li>
-                <li>
-                    <form class="channelChatbox">
-                        <label>Chatbox</label>
-                        <ul class="channelChatboxGrid">
-                            <li><input type="text" placeholder="Type a message"></li>
-                            <li><button type="button">Send</button>
-                            </li>
-                        </ul>
-                    </form>
-                </li>
+                </footer>
 
-                <li>
-                </li>
-            </ul>
-            <footer class="timelineInfoBox">
-                <ul class="timelineInfoBoxGrid">
-                    <li>
-                        <p><span class="watchIcon"></span><a href="#">180 years of Toronto history</a></p>
-                        <p><span class="createdIcon"></span>Created on <time datetime="2020-06-22"><span>Jun 22,
-                                    2020</span></time></p>
-                    </li>
-                    <li>
-                        <p><span class="authorIcon"></span>By <a href="#">ctvnews</a></p>
-                        <p><span class="contributorsIcon"></span>Contributors: cityoftoronto, archivestoronto
-                        </p>
-                    </li>
-                    <li>
-                        <p><span class="publicIcon"></span>Public timeline</p>
-                    </li>
-                </ul>
+            </main>
+            <footer class="footer purple-background">
+                <p>&copy; <a href="/">DLOREAN</a></p>
+                <p>W3C Validated</p>
             </footer>
-
-        </main>
-        <footer class="footer purpleBG">
-            <p>&copy; <a href="/">DLOREAN</a></p>
-            <p>W3C Validated</p>
-        </footer>
-
+        </div>
     </body>
 
 </html>
