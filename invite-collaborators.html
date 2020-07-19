@@ -14,68 +14,80 @@
     </head>
 
     <body>
-        <header>
-            <ul class="top-grid">
-                <li>
-                    <nav class="nav-menu-icon">
-                        <img src="img/hamburger.svg" alt="Menu icon" class="header-menu-item">
-                        <ul class="nav-menu nav-menu-anchor">
-                            <li class="selected"><a href="index.html">Home</a></li>
-                            <li><a href="#">Sign in</a></li>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </li>
-                <li class="header-logo">
-                    <a href="index.html"><img src="img/dlorean-logo.svg" alt="DLOREAN's app logo"></a>
-                </li>
-                <li class="header-search">
-                    <img src="img/search.svg" alt="Search icon" class="header-menu-item">
-                    <form class="header-search-from">
-                        <label class="display-none">Search</label><input type="search" placeholder="Search" class="header-search-bar">
-                    </form>
-                </li>
-            </ul>
-        </header>
-
-        <main class="container">
-            <ul class="displayBoxGird">
-                <li></li>
-                <li>
-                    <section class="containerBox">
-                        <h1>Invite collaborator</h1>
-                        <form class="loginForm">
-                            <ul>
-                                <li><label>Email of collaborator</label><input type="text" placeholder="Email of collaborator">
-                                </li>
-                                <li><label>Your message</label><textarea>Hey! Let's create a timeline together</textarea></li>
-                                <li><input type="submit" name="submit" value="Invite collaborator"></li>
+        <div class="layout">
+            <header>
+                <ul class="top-grid">
+                    <li>
+                        <nav class="nav-menu-icon">
+                            <img src="img/hamburger.svg" alt="Menu icon" class="header-menu-item">
+                            <ul class="nav-menu nav-menu-anchor">
+                                <li class="selected"><a href="index.html">Home</a></li>
+                                <li><a href="#">Sign in</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
                             </ul>
+                        </nav>
+                    </li>
+                    <li class="header-logo">
+                        <a href="index.html"><img src="img/dlorean-logo.svg" alt="DLOREAN's app logo"></a>
+                    </li>
+                    <li class="header-search">
+                        <img src="img/search.svg" alt="Search icon" class="header-menu-item">
+                        <form class="header-search-from">
+                            <label class="display-none">Search</label><input type="search" placeholder="Search"
+                                class="header-search-bar">
                         </form>
-                    </section>
-                        <section class="containerBox marginTop">
+                    </li>
+                </ul>
+            </header>
 
-                        <h2>Collaborators</h2>
-                        <ul>
-                            <li><p><span class="contributorsIcon"></span><a href="#">petersmith</a></p></li>
-                            <li><p><span class="contributorsIcon"></span><a href="#">johndoe</a></p></li>
-                            <li><p><span class="contributorsIcon"></span>antoniovaldivia@gmail.com (pending)</p></li>
-                        </ul>
+            <main class="container flex-grow">
+                <ul class="display-box-grid">
+                    <li></li>
+                    <li>
+                        <section class="container-box">
+                            <h1>Invite collaborator</h1>
+                            <form class="login-form">
+                                <ul>
+                                    <li><label>Email of collaborator</label><input type="text"
+                                            placeholder="Email of collaborator" class="login-form-input">
+                                    </li>
+                                    <li><label>Your message</label><textarea
+                                            class="login-form-input">Hey! Let's create a timeline together</textarea></li>
+                                    <li><input type="submit" name="submit" value="Invite collaborator"
+                                            class="login-form-submit"></li>
+                                </ul>
+                            </form>
+                        </section>
+                        <section class="container-box margin-top">
 
-                    </section>
-                    
-                </li>
-                <li></li>
-            </ul>
+                            <h2>Collaborators</h2>
+                            <ul>
+                                <li>
+                                    <p><span class="contributors-icon"></span><a href="#">petersmith</a></p>
+                                </li>
+                                <li>
+                                    <p><span class="contributors-icon"></span><a href="#">johndoe</a></p>
+                                </li>
+                                <li>
+                                    <p><span class="contributors-icon"></span>antoniovaldivia@gmail.com (pending)</p>
+                                </li>
+                            </ul>
 
-        </main>
+                        </section>
 
-        <footer class="footer purpleBG">
-            <p>&copy; <a href="/">DLOREAN</a></p>
-            <p>W3C Validated</p>
-        </footer>
+                    </li>
+                    <li></li>
+                </ul>
+
+            </main>
+
+            <footer class="footer purple-background">
+                <p>&copy; <a href="/">DLOREAN</a></p>
+                <p>W3C Validated</p>
+            </footer>
+        </div>
 
     </body>
 

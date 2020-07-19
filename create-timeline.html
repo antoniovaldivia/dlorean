@@ -14,67 +14,73 @@
     </head>
 
     <body>
-        <header>
-            <ul class="top-grid">
-                <li>
-                    <nav class="nav-menu-icon">
-                        <img src="img/hamburger.svg" alt="Menu icon" class="header-menu-item">
-                        <ul class="nav-menu nav-menu-anchor">
-                            <li class="selected"><a href="index.html">Home</a></li>
-                            <li><a href="#">Sign in</a></li>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </li>
-                <li class="header-logo">
-                    <a href="index.html"><img src="img/dlorean-logo.svg" alt="DLOREAN's app logo"></a>
-                </li>
-                <li class="header-search">
-                    <img src="img/search.svg" alt="Search icon" class="header-menu-item">
-                    <form class="header-search-from">
-                        <label class="display-none">Search</label><input type="search" placeholder="Search" class="header-search-bar">
-                    </form>
-                </li>
-            </ul>
-        </header>
-
-        <main class="container">
-            <ul class="displayBoxGird">
-                <li></li>
-                <li>
-                    <section class="containerBox">
-                        <h1>Create timeline</h1>
-                        <form class="loginForm">
-                            <ul>
-                                <li><label>Title</label><input type="text" placeholder="New timeline"></li>
-                                <li><label>Description</label><textarea placeholder="A new cool timeline"></textarea></li>
-                                <li><label>Privacy</label>
-                                    <select>
-                                        <option value="1" selected>Public</option>
-                                        <option value="2">Private</option>
-                                    </select></li>
-                                <li><label>Theme</label>
-                                    <select>
-                                        <option value="1" selected>Purple</option>
-                                    </select></li>
-                                <li><label>Image</label><img src="/img/image.svg" alt="Timeline's image"></li>
-                                <li><input type="submit" name="submit" value="Create timeline"></li>
+        <div class="layout">
+            <header>
+                <ul class="top-grid">
+                    <li>
+                        <nav class="nav-menu-icon">
+                            <img src="img/hamburger.svg" alt="Menu icon" class="header-menu-item">
+                            <ul class="nav-menu nav-menu-anchor">
+                                <li class="selected"><a href="index.html">Home</a></li>
+                                <li><a href="#">Sign in</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
                             </ul>
+                        </nav>
+                    </li>
+                    <li class="header-logo">
+                        <a href="index.html"><img src="img/dlorean-logo.svg" alt="DLOREAN's app logo"></a>
+                    </li>
+                    <li class="header-search">
+                        <img src="img/search.svg" alt="Search icon" class="header-menu-item">
+                        <form class="header-search-from">
+                            <label class="display-none">Search</label><input type="search" placeholder="Search"
+                                class="header-search-bar">
                         </form>
-                    </section>
-                </li>
-                <li></li>
-            </ul>
+                    </li>
+                </ul>
+            </header>
 
-        </main>
+            <main class="container flex-grow">
+                <ul class="display-box-grid">
+                    <li></li>
+                    <li>
+                        <section class="container-box">
+                            <h1>Create timeline</h1>
+                            <form class="login-form">
+                                <ul>
+                                    <li><label>Image</label><img src="/img/image.svg" alt="Timeline's image"></li>
+                                    <li><label>Title</label><input type="text" placeholder="New timeline"
+                                            class="login-form-input"></li>
+                                    <li><label>Description</label><textarea placeholder="A new cool timeline"
+                                            class="login-form-input"></textarea></li>
+                                    <li><label>Privacy</label>
+                                        <select class="login-form-input">
+                                            <option value="1" selected>Public</option>
+                                            <option value="2">Private</option>
+                                        </select></li>
+                                    <li><label>Theme</label>
+                                        <select class="login-form-input">
+                                            <option value="1" selected>Purple</option>
+                                        </select></li>
+                                    <li><input type="submit" name="submit" value="Create timeline"
+                                            class="login-form-submit"></li>
+                                </ul>
+                            </form>
+                        </section>
+                    </li>
+                    <li></li>
+                </ul>
 
-        <footer class="footer purpleBG">
-            <p>&copy; <a href="/">DLOREAN</a></p>
-            <p>W3C Validated</p>
-        </footer>
+            </main>
 
+            <footer class="footer purple-background">
+                <p>&copy; <a href="/">DLOREAN</a></p>
+                <p>W3C Validated</p>
+            </footer>
+
+        </div>
     </body>
 
 </html>

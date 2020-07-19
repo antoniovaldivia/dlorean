@@ -14,60 +14,67 @@
     </head>
 
     <body>
-        <header>
-            <ul class="top-grid">
-                <li>
-                    <nav class="nav-menu-icon">
-                        <img src="img/hamburger.svg" alt="Menu icon" class="header-menu-item">
-                        <ul class="nav-menu nav-menu-anchor">
-                            <li class="selected"><a href="index.html">Home</a></li>
-                            <li><a href="#">Sign in</a></li>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </li>
-                <li class="header-logo">
-                    <a href="index.html"><img src="img/dlorean-logo.svg" alt="DLOREAN's app logo"></a>
-                </li>
-                <li class="header-search">
-                    <img src="img/search.svg" alt="Search icon" class="header-menu-item">
-                    <form class="header-search-from">
-                        <label class="display-none">Search</label><input type="search" placeholder="Search" class="header-search-bar">
-                    </form>
-                </li>
-            </ul>
-        </header>
-
-        <main class="container">
-            <ul class="displayBoxGird">
-                <li></li>
-                <li>
-                    <section class="containerBox">
-                        <h1>New account</h1>
-                        <form class="loginForm">
-                            <ul>
-                                <li><label>Username</label><input type="text" placeholder="Username"></li>
-                                <li><label>E-mail</label><input type="email" placeholder="E-mail"></li>
-                                <li><label>Password</label><input type="password" placeholder="Password"></li>
-                                <li><input type="submit" name="submit" value="Create account"></li>
-                                <li><a href="#">I already have an account</a></li>
+        <div class="layout">
+            <header>
+                <ul class="top-grid">
+                    <li>
+                        <nav class="nav-menu-icon">
+                            <img src="img/hamburger.svg" alt="Menu icon" class="header-menu-item">
+                            <ul class="nav-menu nav-menu-anchor">
+                                <li class="selected"><a href="index.html">Home</a></li>
+                                <li><a href="#">Sign in</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
                             </ul>
+                        </nav>
+                    </li>
+                    <li class="header-logo">
+                        <a href="index.html"><img src="img/dlorean-logo.svg" alt="DLOREAN's app logo"></a>
+                    </li>
+                    <li class="header-search">
+                        <img src="img/search.svg" alt="Search icon" class="header-menu-item">
+                        <form class="header-search-from">
+                            <label class="display-none">Search</label><input type="search" placeholder="Search"
+                                class="header-search-bar">
                         </form>
+                    </li>
+                </ul>
+            </header>
 
-                    </section>
-                </li>
-                <li></li>
-            </ul>
+            <main class="container flex-grow">
+                <ul class="display-box-grid">
+                    <li></li>
+                    <li>
+                        <section class="container-box">
+                            <h1>Create a new account‎</h1>
+                            <form class="login-form">
+                                <ul>
+                                    <li><label>Username</label><input type="text" placeholder="Username"
+                                            class="login-form-input"></li>
+                                    <li><label>E-mail</label><input type="email" placeholder="E-mail"
+                                            class="login-form-input"></li>
+                                    <li><label>Password</label><input type="password" placeholder="Password"
+                                            class="login-form-input"></li>
+                                    <li><input type="submit" name="submit" value="Create a new account‎"
+                                            class="login-form-submit"></li>
+                                    <li><a href="#">I already have an account</a></li>
+                                </ul>
+                            </form>
 
-        </main>
+                        </section>
+                    </li>
+                    <li></li>
+                </ul>
 
-        <footer class="footer yellowBG">
-            <p>&copy; <a href="/">DLOREAN</a></p>
-            <p>W3C Validated</p>
-        </footer>
+            </main>
 
+            <footer class="footer yellow-background">
+                <p>&copy; <a href="/">DLOREAN</a></p>
+                <p>W3C Validated</p>
+            </footer>
+
+        </div>
     </body>
 
 </html>
