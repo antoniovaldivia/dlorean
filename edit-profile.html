@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description"
+            content="DLOREAN is an online tool that lets you create, collaborate on, and publish timelines.">
+        <meta name="author" content="Antonio Valdivia">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>DLOREAN</title>
+    </head>
+
+    <body>
+        <div class="layout">
+            <header>
+                <ul class="top-grid">
+                    <li>
+                        <nav class="nav-menu-icon">
+                            <img src="img/hamburger.svg" alt="Menu icon" class="header-menu-item">
+                            <ul class="nav-menu nav-menu-anchor">
+                                <li class="selected"><a href="index.html">Home</a></li>
+                                <li><a href="#">Sign in</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="header-logo">
+                        <a href="index.html"><img src="img/dlorean-logo.svg" alt="DLOREAN's app logo"></a>
+                    </li>
+                    <li class="header-search">
+                        <img src="img/search.svg" alt="Search icon" class="header-menu-item">
+                        <form class="header-search-from">
+                            <label class="display-none">Search</label><input type="search" placeholder="Search"
+                                class="header-search-bar">
+                        </form>
+                    </li>
+                </ul>
+            </header>
+
+            <main class="container flex-grow">
+                <ul class="display-box-grid">
+                    <li></li>
+                    <li>
+                        <section class="container-box">
+                            <h1>Edit profile</h1>
+                            <form class="login-form">
+                                <ul>
+                                    <li><label>Profile picture</label><img src="/img/image.svg" alt="User's profile picture">
+                                    </li>
+                                    <li><label>Name</label><input type="text" value="Antonio Valdivia"
+                                        class="login-form-input"></li>
+                                    <li><label>Username</label><input type="text" value="antoniovaldivia"
+                                            class="login-form-input">
+                                    </li>
+                                    <li><label>Website</label><input type="text" value="https://valdivia.tv"
+                                        class="login-form-input">
+                                </li>
+                                    <li><label>Bio</label><textarea class="login-form-input">I love timelines</textarea>
+                                    </li>    
+
+                                    <li><label>Email</label><input value="antoniovaldivia@gmail.com"
+                                            class="login-form-input"></li>
+                                    <li><input type="submit" name="submit" value="Edit profile"
+                                            class="login-form-submit"></li>        
+                                    <li><a href="#">Delete my account</a></li>
+
+                                </ul>
+                            </form>
+                        </section>
+                    </li>
+                    <li></li>
+                </ul>
+
+            </main>
+
+            <footer class="footer purple-background">
+                <p>&copy; <a href="/">DLOREAN</a></p>
+                <p>W3C Validated</p>
+            </footer>
+
+        </div>
+    </body>
+
+</html>
