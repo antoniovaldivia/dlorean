@@ -698,11 +698,11 @@ address {
     margin-top: 1em;
 }
 
-.login-form buttom {
+/* .login-form buttom {
     margin-top: 1em;
-}
+} */
 
-.login-form input[type="text"], input[type="password"], input[type="email"], textarea, select, input[type="date"], input[type="time"], input[type="file"] {
+.login-form-input {
     border-radius: 0.6em;
     border: 0.1em solid #f1f2f6;
     padding-left: 0.5em;
@@ -712,11 +712,11 @@ address {
     width: 100%;
 }
 
-.login-form input[type="submit"] {
+.login-form-submit {
     border: 0em solid #f1f2f6;
     border-radius: 0.8em;
     background-color: #2b2e42;
-    padding: 0.4em;
+    padding: 0.4em 3em 0.4em 3em;
     margin-top: 0.8em;
     display: block;
     width: 10em;
@@ -732,7 +732,7 @@ address {
 
 /*How to change the color of the checkbox?*/
 
-.login-form input[type="checkbox"] {
+.login-form-checkbox {
     color: #2b2e42;
 }
 
