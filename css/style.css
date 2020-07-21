@@ -252,6 +252,13 @@ address {
     justify-content: center;
 }
 
+.display-profile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
 .timelines-header-grid-img {
     width: 5em;
 }
@@ -895,6 +902,9 @@ address {
         max-width: 2em;
     }
     .display-channel-grid {
+        grid-template-columns: 12% 76% 12%;
+    }
+    .display-profile-grid {
         grid-template-columns: 12% 76% 12%;
     }
     .display-box-grid {
