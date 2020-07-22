@@ -139,6 +139,7 @@ address {
 position: -webkit-sticky;
 position: sticky;
 top: 2em;
+z-index: 999;
 }
 
 .masthead {
@@ -359,6 +360,7 @@ top: 2em;
 }
 
 .dynamic-timeline-line-dot {
+    --percent: 0;
     display: block;
     height: 0.7em;
     width: 0.7em;
@@ -367,6 +369,7 @@ top: 2em;
     border-radius: 50%;
     position: absolute;
     margin-left: -0.3em;
+    left: calc(100% * var(--percent))
 }
 
 .dynamic-timeline-line-dot time {
@@ -375,6 +378,9 @@ top: 2em;
     font-weight: 700;
     margin-top: 1.8em;
     margin-left: -0.8em;
+}
+.dynamic-timeline-line-dot:nth-child(even) time {
+    margin-top: -1.8em;
 }
 
 .active-dot {
@@ -829,6 +835,7 @@ top: 2em;
     top: 0em;
     left: 0;
     height: 1.7em;
+    width: 100%;
     overflow: hidden;
     color: #2b2e42;
     font-weight: 700;
@@ -837,6 +844,7 @@ top: 2em;
     display: none;
     text-align: left;
     padding-left: 0.5em;
+    z-index: 999;
 }
 
 .titleBar::before {
@@ -960,6 +968,12 @@ https://codepen.io/erikterwan/details/EVzeRP
 .menu-toggle input:checked~ul {
     transform: none;
 }
+
+
+
+
+
+
 
 @media screen and (min-width: 60em) {
     h1 {
