@@ -47,13 +47,16 @@
                 </ul>
             </header>
 
+            <header>
+                <div class="titleBar"></div>
+              </header>
+
             <main class="timeline flex-grow">
                 <ul class="timelines-grid">
                     <li>
                         <article class="timeline-box">
                             <header>
                                 <ul class="timelines-header-grid">
-
                                     <li class="timelines-header-grid-img">
                                         <a href="#"><img src="img/demo/toronto.jpg"
                                                 alt="An image from 180 years of Toronto history"
@@ -61,7 +64,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <h1>180 years of Toronto history</h1>
+                                            <h1 id="heading">180 years of Toronto history</h1>
                                         </a>
                                         <p><span class="author-icon"></span>By <a href="#">ctvnews</a></p>
                                     </li>
@@ -118,7 +121,7 @@
                         </div>
                     </div>
                 </nav>
-                <ul class="dynamic-timeline purple-background">
+                <ul class="dynamic-timeline purple-background sticky-bar">
                     <li>
                         <div class="dynamic-timeline-line purple-line">
                             <ul>
@@ -143,6 +146,9 @@
                                         <span>1920</span></time>
                                 </li>
                             </ul>
+                            <div class="progress hide">
+                            </div>
+                 
                         </div>
                     </li>
                     <li>
@@ -290,6 +296,8 @@
                 <p>W3C Validated</p>
             </footer>
         </div>
+        <script src="js/main.js"></script>
+
     </body>
 
 </html>
