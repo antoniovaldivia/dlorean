@@ -9,11 +9,11 @@ let years = document.getElementsByClassName('year');
 const timeline = {
     title: 'hello world',
     events: [
-        {date: new Date(2001, 10, 1), text: "Blah blah"},
-        {date: new Date(2002, 10, 1), text: "Blah blah"},
-        {date: new Date(2011, 10, 1), text: "Blah blah"},
-        {date: new Date(2015, 10, 1), text: "Blah blah"},
-        {date: new Date(2026, 10, 1), text: "Blah blah"}
+        {date: new Date(2001, 3, 1), title: "Blah blah", category: 'The Moon'},
+        {date: new Date(2002, 3, 1), title: "Blah blah"},
+        {date: new Date(2011, 3, 1), title: "Blah blah"},
+        {date: new Date(2015, 3, 1), title: "Blah blah"},
+        {date: new Date(2026, 3, 1), title: "Blah blah"}
     ]
 }
 
@@ -40,7 +40,9 @@ window.addEventListener('load', event => {
     const diffTime = Math.abs(first - last)
     const totalDaysBetween = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
     const $timeline = document.querySelector('.dynamic-timeline-line > ul')
+    const $eventgrid = document.querySelector('.display-events-grid')
     $timeline.innerHTML = "" // cheating, fix this
+    $eventgrid.innerHTML = ""
     // Create fragment
 
     timeline.events.forEach(e => {
@@ -58,6 +60,9 @@ window.addEventListener('load', event => {
         time.className = 'purple'
         time.setAttribute('timedate',  `${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}`)
         time.append(e.date.getFullYear())
+
+        $eventgrid.innerHTML += getTimelineEventAsHtml(e)
+
     })
 })
 
@@ -93,6 +98,42 @@ window.addEventListener('scroll', event => {
 
 
 
+function getTimelineEventAsHtml(e) {
+    const months = ['Jan', 'F', 'M', "A", "M", "J", "J"]
+
+return `
+<li>
+    <article class="event">
+        <ul class="events-grid text-align-right">
+            <li><span class="events-grid-dot align-right-dot"></span><em class="events-grid-dot-line align-right-line"></em>
+                <header class="event-header">
+                    <time class="purple" datetime="${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}">${months[e.date.getMonth()]} ${e.date.getDate()}, <span id="1834" class="year" style="background-color: red;">${e.date.getFullYear()}</span></time>
+                    <a href="#">
+                        <h2>${e.title}</h2>
+                    </a>
+                    <address><span class="location-icon"></span>${e.category}</address>
+                    <p><span class="author-icon"></span>By <a href="#">ctvnews</a></p>
+                </header>
+            </li>
+            <li class="event-img">
+                <a href="#"><img src="img/demo/man-on-the-moon.jpg" alt="An image of One Giant Leap For Mankind: The First Person on the Moon"></a>
+            </li>
+            <li>
+                <footer>
+                    <ul class="event-interactions-grid">
+                        <li>
+                            <p>Likes</p>
+                        </li>
+                        <li>
+                            <p>Comments</p>
+                        </li>
+                    </ul>
+                </footer>
+            </li>
+        </ul>
+    </article>
+</li>`
+}
 
 
     
