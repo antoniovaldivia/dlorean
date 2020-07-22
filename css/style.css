@@ -172,8 +172,7 @@ address {
 .timeline-box {
     border: 0.1em solid #f1f2f6;
     border-radius: 1em;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
+    padding: 0.4em;
 }
 
 .popular-timelines {
