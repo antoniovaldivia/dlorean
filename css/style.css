@@ -605,6 +605,7 @@ top: 2em;
     border-radius: 1em;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
+    margin-top: 1em;
 }
 
 .timeline-info-box a {
@@ -821,6 +822,7 @@ top: 2em;
     font-weight: 700;
 }
 
+
 .titleBar {
     background-color: white;
     position: fixed;
@@ -847,20 +849,7 @@ top: 2em;
     padding: 0.5em 0.5em 0.5em 1em;
 
 }
-.yearBar {
-    background-color: white;
-    position: fixed;
-    top: 2.3em;
-    left: 0;
-    width: 100%;
-    height: 1.4em;
-    overflow: hidden;
-    font-size: 0.8em;
-    display: none;
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-    text-align: center;
-}
+
 
 .hide {
     display: none;
@@ -870,29 +859,6 @@ top: 2em;
     display: block;
 }
 
-.left {
-    text-align: left;
-}
-
-.right {
-    text-align: right;
-}
-
-.center {
-    text-align: center;
-}
-
-.box {
-    width: auto;
-}
-
-.limited {
-    max-width: 70%;
-}
-
-.extended {
-    max-width: 0%;
-}
 
 
 

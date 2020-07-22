@@ -1,7 +1,10 @@
+let firstYear = "1834";
+let lastYear = "1920";
 let $progress = document.querySelector('.progress')
 let $h1 = document.getElementById('heading')
 let $titleBar = document.querySelector('.titleBar')
 let title = document.querySelector('h1').textContent
+let years = document.getElementsByClassName('year');
 
 window.addEventListener('scroll', event => {
     let windowH = window.innerHeight
@@ -28,3 +31,8 @@ window.addEventListener('scroll', event => {
     }
 
 })
+
+    for(i in years){
+        years[i].style.backgroundColor = "red"
+    }
+
