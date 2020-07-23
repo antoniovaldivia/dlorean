@@ -73,7 +73,7 @@ window.addEventListener('scroll', event => {
     let amtScrolled = window.scrollY
     let ttlAvailable = documentH - windowH
     let percent = amtScrolled / ttlAvailable
-    $progress.style.width = `${percent * 100}%`
+    $progress.style.width = `${percent * 99.7}%`
     let h1Top = $h1.offsetTop
     let h1Height = $h1.clientHeight
     console.log(h1Top, h1Height, amtScrolled)
@@ -161,7 +161,7 @@ let theStateOfThings = () => {
         let theId = $sec.getAttribute('id')
         let $dynamicDot = document.getElementById(`dot-${theId}`)
 
-        if (top < winH && bottom > 0) {
+        if (top < winH && bottom > 50) {
             $dynamicDot.classList.add('active-dot')         
 
         } else {
