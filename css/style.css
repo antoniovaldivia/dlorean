@@ -138,7 +138,7 @@ address {
 .sticky-bar {
 position: -webkit-sticky;
 position: sticky;
-top: 2em;
+top: 1.6em;
 z-index: 999;
 }
 
@@ -332,7 +332,7 @@ z-index: 999;
     border-radius: 0.8em;
     padding: 1.5em;
     font-size: 1.1em;
-    min-height: 5.1em;
+    min-height: 4em;
 }
 
 .dynamic-timeline p {
@@ -834,7 +834,7 @@ z-index: 999;
     position: fixed;
     top: 0em;
     left: 0;
-    height: 1.7em;
+    height: 5em;
     width: 100%;
     overflow: hidden;
     color: #2b2e42;
