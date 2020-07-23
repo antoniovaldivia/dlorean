@@ -3,6 +3,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
@@ -122,10 +123,6 @@ address {
     padding: 0.5em 0.5em 0.5em 2.5em;
 }
 
-.display-none {
-    display: none;
-}
-
 .hide {
     display: none;
 }
@@ -134,12 +131,11 @@ address {
     display: block;
 }
 
-
 .sticky-bar {
-position: -webkit-sticky;
-position: sticky;
-top: 1.6em;
-z-index: 999;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1.6em;
+    z-index: 999;
 }
 
 .masthead {
@@ -379,6 +375,7 @@ z-index: 999;
     margin-top: 1.8em;
     margin-left: -0.8em;
 }
+
 .dynamic-timeline-line-dot:nth-child(even) time {
     margin-top: -1.8em;
 }
@@ -807,10 +804,6 @@ z-index: 999;
     display: none;
 }
 
-.margin-bottom {
-    margin-bottom: 1em;
-}
-
 .menu .selected a {
     font-size: 1em;
     font-weight: 700;
@@ -828,12 +821,11 @@ z-index: 999;
     font-weight: 700;
 }
 
-
 .titleBar {
     background-color: white;
     position: fixed;
     top: 0em;
-    height: 5em;
+    height: 1.5em;
     width: 100%;
     overflow: hidden;
     color: #2b2e42;
@@ -854,9 +846,7 @@ z-index: 999;
     background-position: 0.1em;
     background-size: auto 0.9em;
     padding: 0.5em 0.0em 0.5em 1em;
-
 }
-
 
 .hide {
     display: none;
@@ -865,14 +855,6 @@ z-index: 999;
 .show {
     display: block;
 }
-
-
-
-
-/* 
-Top menu based on:
-https://codepen.io/erikterwan/details/EVzeRP
- */
 
 .menu-toggle {
     display: block;
@@ -910,7 +892,7 @@ https://codepen.io/erikterwan/details/EVzeRP
 .menu-toggle span {
     display: block;
     width: 2em;
-    height: 0.27em;
+    height: 0.26em;
     margin-bottom: 0.3em;
     position: relative;
     background: #9d9db4;
@@ -967,12 +949,6 @@ https://codepen.io/erikterwan/details/EVzeRP
 .menu-toggle input:checked~ul {
     transform: none;
 }
-
-
-
-
-
-
 
 @media screen and (min-width: 60em) {
     h1 {
@@ -1082,16 +1058,13 @@ https://codepen.io/erikterwan/details/EVzeRP
         max-width: 2em;
     }
     .display-single-event-grid {
-        grid-template-columns: 12% 76% 12%;
+        grid-template-columns: 25% 50% 25%;
         text-align: center;
     }
     .display-single-event-grid-buttons img {
         max-width: 2em;
     }
     .display-channel-grid {
-        grid-template-columns: 12% 76% 12%;
-    }
-    .display-profile-grid {
         grid-template-columns: 12% 76% 12%;
     }
     .display-box-grid {
