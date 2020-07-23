@@ -833,7 +833,6 @@ z-index: 999;
     background-color: white;
     position: fixed;
     top: 0em;
-    left: 0;
     height: 5em;
     width: 100%;
     overflow: hidden;
@@ -843,7 +842,7 @@ z-index: 999;
     font-family: 'Nunito', sans-serif;
     display: none;
     text-align: left;
-    padding-left: 0.5em;
+    padding-left: 0.1em;
     z-index: 999;
 }
 
@@ -852,9 +851,9 @@ z-index: 999;
     background-image: url(/img/watch.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    background-position: 0.5em;
+    background-position: 0.1em;
     background-size: auto 0.9em;
-    padding: 0.5em 0.5em 0.5em 1em;
+    padding: 0.5em 0.0em 0.5em 1em;
 
 }
 
