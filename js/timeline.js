@@ -7,12 +7,23 @@ let title = document.querySelector('h1').textContent
 const timeline = {
     title: 'hello world',
     events: [
+        {date: new Date(2018, 11, 21, 10, 33, 30, 0), title: "Blah blah"},
+        {date: new Date(2018, 11, 22, 11, 33, 30, 0), title: "Blah blah"},
+        {date: new Date(2018, 11, 23, 12, 33, 30, 0), title: "Blah blah"},
+        {date: new Date(2018, 11, 24, 14, 33, 30, 0), title: "Blah blah"},
+
+    ]
+}
+
+const timeline2 = {
+    title: 'hello world',
+    events: [
         {date: new Date(2001, 1, 1, 0, 0, 0 ,0), title: "Blah blah", category: 'The Moon'},
         {date: new Date(2002, 2, 1, 0, 0, 0 ,0), title: "Blah blah"},
         {date: new Date(2011, 3, 1, 10, 33, 30, 0), title: "Blah blah"},
         {date: new Date(2018, 11, 24, 11, 33, 30, 0), title: "Blah blah"},
         {date: new Date(2018, 11, 24, 11, 33, 30, 0), title: "Blah blah"},
-        {date: new Date(2015, 4, 1, 0, 0, 0 ,0), title: "Blah blah"},
+        {date: new Date(2025, 4, 1, 0, 0, 0 ,0), title: "Blah blah"},
         {date: new Date(2026, 5, 1, 0, 0, 0 ,0), title: "Blah blah"}
     ]
 }
