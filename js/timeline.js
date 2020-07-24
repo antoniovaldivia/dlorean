@@ -38,7 +38,7 @@ window.addEventListener('load', event => {
     const diffTime = Math.abs(first - last)
     const totalDaysBetween = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
     const $timeline = document.querySelector('.dynamic-timeline-line > ul')
-    const $eventgrid = document.querySelector('.display-events-grid')
+    const $eventgrid = document.querySelector('.the-timeline')
     $timeline.innerHTML = "" // cheating, fix this
     $eventgrid.innerHTML = ""
     // Create fragment
@@ -73,7 +73,7 @@ window.addEventListener('scroll', event => {
     let amtScrolled = window.scrollY
     let ttlAvailable = documentH - windowH
     let percent = amtScrolled / ttlAvailable
-    $progress.style.width = `${percent * 99.7}%`
+    $progress.style.width = `${percent * 99.8}%`
     let h1Top = $h1.offsetTop
     let h1Height = $h1.clientHeight
     console.log(h1Top, h1Height, amtScrolled)
@@ -109,36 +109,38 @@ function getTimelineEventAsHtml(e) {
 
 
 return `
-<li>
-    <article class="event">
-        <ul class="events-grid text-align-right">
-            <li><span class="events-grid-dot align-right-dot"></span><em class="events-grid-dot-line align-right-line"></em>
-                <header class="event-header">
-                    <time class="purple" datetime="${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}">${months[e.date.getMonth()]} ${e.date.getDate()}, <span class="yearClass">${e.date.getFullYear()}</span></time>
-                    <a href="#">
-                        <h2 class="eventHeader" id="${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}">${e.title}</h2>
-                    </a>
-                    <address><span class="location-icon"></span>${e.category}</address>
-                    <p><span class="author-icon"></span>By <a href="#">ctvnews</a></p>
-                </header>
-            </li>
-            <li class="event-img">
-                <a href="#"><img src="img/demo/man-on-the-moon.jpg" alt="An image of One Giant Leap For Mankind: The First Person on the Moon"></a>
-            </li>
-            <li>
-                <footer>
-                    <ul class="event-interactions-grid">
-                        <li>
-                            <p>Likes</p>
-                        </li>
-                        <li>
-                            <p>Comments</p>
-                        </li>
-                    </ul>
-                </footer>
-            </li>
-        </ul>
-    </article>
+<li class="the-timeline-item">
+<article class="event">
+<ul>
+    <li>
+        <header>
+        <time class="purple" datetime="${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}">${months[e.date.getMonth()]} ${e.date.getDate()}, <span class="yearClass">${e.date.getFullYear()}</span></time>
+            <a href="#">
+            <h2 class="eventHeader" id="${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}">${e.title}</h2>
+            </a>
+            <address><span class="location-icon"></span>${e.category}</address>
+            <p><span class="author-icon"></span>By <a href="#">ctvnews</a></p>
+        </header>
+    </li>
+    <li class="event-img">
+        <a href="#"><img src="img/demo/man-on-the-moon.jpg"
+                alt="An image of One Giant Leap For Mankind: The First Person on the Moon"></a>
+    </li>
+    <li>
+        <footer>
+            <ul class="event-interactions-grid">
+                <li>
+                    <p>Likes</p>
+                </li>
+                <li>
+                    <p>Comments</p>
+                </li>
+            </ul>
+        </footer>
+    </li>
+</ul>
+</article>
+
 </li>`
 }
 

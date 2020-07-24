@@ -188,6 +188,7 @@ address {
     border: 0.1em solid #f1f2f6;
     border-radius: 1em;
     padding: 0.4em;
+    box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.0), 0 0 2em rgba(0, 0, 0, 0.1);
 }
 
 .popular-timelines {
@@ -200,6 +201,7 @@ address {
     grid-gap: 1em;
 }
 
+/* 
 .display-events-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -208,6 +210,48 @@ address {
 
 .display-events-grid-additional-grids {
     display: none;
+} */
+
+.the-timeline *, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.the-timeline {
+    list-style-type: none;
+    padding-left: 3em;
+}
+
+.the-timeline-item {
+    position: relative;
+    min-height: 10em;
+    margin: 1em 0;
+    border-radius: 0.9em;
+    width: 97%;
+}
+
+.the-timeline-item:not(:last-child)::before {
+    /* the line */
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.5em;
+    height: calc(100% + 1em);
+    top: 0.5em;
+    left: -1.875em;
+    background-color: #d38bac;
+}
+
+.the-timeline-item::after {
+    /* the dot */
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 50%;
+    top: 0;
+    left: -2.2em;
+    background-color: #b33771;
 }
 
 .display-single-event-grid {
@@ -437,8 +481,8 @@ address {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
     margin-top: 0.5em;
-    text-align: left;
     padding: 0.9em;
+    box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.0), 0 0 1em rgba(0, 0, 0, 0.1);
 }
 
 .events-grid {
@@ -595,13 +639,9 @@ address {
     background-color: #2b2e42;
 }
 
-.profile-h3 {
-    padding: 0.4em 0.8em 0.4em 0.8em;
-}
-
-.timeline-events-grid-hl {
-    padding-left: 4em;
-}
+/* .timeline-events-grid-hl {
+    padding-left: 0em;
+} */
 
 .timeline-info-box {
     border: 0.1em solid #f1f2f6;
@@ -1019,7 +1059,7 @@ address {
     .popular-timelines-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .display-events-grid {
+    /*     .display-events-grid {
         grid-template-columns: 1fr 1fr;
         grid-gap: 5em;
     }
@@ -1028,10 +1068,10 @@ address {
     }
     .display-events-grid-text-align-left {
         text-align: left;
-    }
-    .text-align-right {
+    } */
+    /*     .text-align-right {
         text-align: right;
-    }
+    } */
     .timeline h1 {
         font-size: 2.4em;
     }
@@ -1045,9 +1085,9 @@ address {
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
     }
-    .timeline-events-grid-hl {
+    /*   .timeline-events-grid-hl {
         padding-left: 0em;
-    }
+    } */
     .timeline-interactions-grid-buttons li {
         display: inline-block;
         width: 2em;
@@ -1100,6 +1140,30 @@ address {
     .align-right-line {
         margin-left: 3.7em;
         height: 130%;
+    }
+    .the-timeline {
+        padding: 0.1em 1.3em 0em 1.3em;
+    }
+    .the-timeline-item {
+        width: calc(50% - 1.2em);
+    }
+    .the-timeline-item:nth-child(odd) {
+        text-align: right;
+        right: 0.5em;
+    }
+    .the-timeline-item:nth-child(even) {
+        margin-left: auto;
+        left: 0.5em;
+    }
+    /* line odds*/
+    .the-timeline-item:nth-child(odd):not(:last-child)::before {
+        left: auto;
+        right: -2.05em;
+    }
+    /* line dots*/
+    .the-timeline-item:nth-child(odd)::after {
+        left: auto;
+        right: -2.35em;
     }
 }
 
