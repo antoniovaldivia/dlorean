@@ -7,30 +7,15 @@ let title = document.querySelector('h1').textContent
 const timeline = {
     title: 'hello world',
     events: [
-        {date: new Date(2001, 1, 1), title: "Blah blah", category: 'The Moon'},
-        {date: new Date(2002, 2, 1), title: "Blah blah"},
-        {date: new Date(2011, 3, 1), title: "Blah blah"},
-        {date: new Date(2015, 4, 1), title: "Blah blah"},
-        {date: new Date(2026, 5, 1), title: "Blah blah"}
+        {date: new Date(2001, 1, 1, 0, 0, 0 ,0), title: "Blah blah", category: 'The Moon'},
+        {date: new Date(2002, 2, 1, 0, 0, 0 ,0), title: "Blah blah"},
+        {date: new Date(2011, 3, 1, 10, 33, 30, 0), title: "Blah blah"},
+        {date: new Date(2018, 11, 24, 11, 33, 30, 0), title: "Blah blah"},
+        {date: new Date(2018, 11, 24, 11, 33, 30, 0), title: "Blah blah"},
+        {date: new Date(2015, 4, 1, 0, 0, 0 ,0), title: "Blah blah"},
+        {date: new Date(2026, 5, 1, 0, 0, 0 ,0), title: "Blah blah"}
     ]
 }
-
-/* const first = timeline.events[0].date
-const last = timeline.events[events.length - 1].date
-const totalDaysBetween = // difference between last and first
-
-timeline.events.forEach(e => {
-
-    const daysFromStart = // e.date - first
-
-    const percentOfLine = daysFromStart / totalDayBetween
-    const dot = document.createElement('span')
-    document.querySelector('.dynamicTimelineLine').append(dot)
-    dot.className = 'dot'
-    dot.style.setAttribute('--percent', p)
-    
-})
- */
 
 window.addEventListener('load', event => {
     const first = timeline.events[0].date
@@ -41,8 +26,6 @@ window.addEventListener('load', event => {
     const $eventgrid = document.querySelector('.the-timeline')
     $timeline.innerHTML = "" // cheating, fix this
     $eventgrid.innerHTML = ""
-    // Create fragment
-
     timeline.events.forEach(e => {
 
         const daysFromStart = Math.ceil(Math.abs(e.date - first) / (1000 * 60 * 60 * 24))
@@ -95,22 +78,13 @@ window.addEventListener('scroll', event => {
 })
 
 
-
-
-
-
 function getTimelineEventAsHtml(e) {
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 
-/*     let $idYear = document.getElementById(`${idForYear}`)
-        let $idYearTop = $idYear.offsetTop
-        let $idYearHeight = $idYear.clientHeight */
-
-
 return `
 <li class="the-timeline-item">
-<article class="event">
+<article class="event box-shadow">
 <ul>
     <li>
         <header>
@@ -177,4 +151,3 @@ let theStateOfThings = () => {
 window.addEventListener('load', theStateOfThings);
 window.addEventListener('scroll', theStateOfThings);
 window.addEventListener('resize', theStateOfThings);
-
