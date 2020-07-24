@@ -440,7 +440,7 @@ address {
     grid-gap: 0.5em;
 }
 
-.timelines-events-grid {
+/* .timelines-events-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.5em;
@@ -450,7 +450,7 @@ address {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1em;
-}
+} */
 
 .popular-timelines-events-grid time {
     text-transform: uppercase;
@@ -465,8 +465,6 @@ address {
 .event {
     border: 0.1em solid #f1f2f6;
     border-radius: 1em;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
     margin-top: 0.5em;
     padding: 0.9em;
     box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.0), 0 0 1em rgba(0, 0, 0, 0.1);
@@ -1080,9 +1078,9 @@ address {
     .display-box-grid {
         grid-template-columns: 25% 50% 25%;
     }
-    .timelines-events-grid {
+/*     .timelines-events-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
+    } */
     .channel {
         padding: 1em;
     }
@@ -1099,7 +1097,7 @@ address {
         position: absolute;
         z-index: 999;
     }
-    .align-left-dot {
+  /*   .align-left-dot {
         margin-left: -4.1em;
     }
     .align-left-line {
@@ -1112,16 +1110,19 @@ address {
     .align-right-line {
         margin-left: 3.7em;
         height: 130%;
-    }
+    } */
     .the-timeline {
-        padding: 0.1em 1.3em 0em 1.3em;
+        padding: 0.1em 1.3em 1em 1.3em;
+        margin-bottom: 7em;
     }
     .the-timeline-item {
+        height: 5em;
         width: calc(50% - 1.2em);
     }
     .the-timeline-item:nth-child(odd) {
         text-align: right;
         right: 0.5em;
+        direction: rtl;
     }
     .the-timeline-item:nth-child(even) {
         margin-left: auto;
@@ -1141,7 +1142,17 @@ address {
         left: auto;
         right: -2.3em;
     }
+    .event-img img {
+        width:40em ;
+        justify-content:center;
+        text-align:center;
+    } 
+    .events-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     
 
+    }
 }
 
 @media screen and (min-width: 80em) {

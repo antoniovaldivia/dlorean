@@ -7,26 +7,16 @@ let title = document.querySelector('h1').textContent
 const timeline = {
     title: 'hello world',
     events: [
-        {date: new Date(2018, 11, 21, 10, 33, 30, 0), title: "Blah blah"},
-        {date: new Date(2018, 11, 22, 11, 33, 30, 0), title: "Blah blah"},
-        {date: new Date(2018, 11, 23, 12, 33, 30, 0), title: "Blah blah"},
-        {date: new Date(2018, 11, 24, 14, 33, 30, 0), title: "Blah blah"},
+        {date: new Date(2018, 11, 21, 10, 33, 30, 0), title: "One Giant Leap For Mankind: The First Person on the Moon"},
+        {date: new Date(2019, 11, 22, 11, 33, 30, 0), title: "Blah blah"},
+        {date: new Date(2020, 11, 22, 11, 33, 30, 0), title: "Blah blah"},
+        {date: new Date(2025, 11, 22, 11, 33, 30, 0), title: "Michael Scott becomes the world's best boss"},
+
+
 
     ]
 }
 
-const timeline2 = {
-    title: 'hello world',
-    events: [
-        {date: new Date(2001, 1, 1, 0, 0, 0 ,0), title: "Blah blah", category: 'The Moon'},
-        {date: new Date(2002, 2, 1, 0, 0, 0 ,0), title: "Blah blah"},
-        {date: new Date(2011, 3, 1, 10, 33, 30, 0), title: "Blah blah"},
-        {date: new Date(2018, 11, 24, 11, 33, 30, 0), title: "Blah blah"},
-        {date: new Date(2018, 11, 24, 11, 33, 30, 0), title: "Blah blah"},
-        {date: new Date(2025, 4, 1, 0, 0, 0 ,0), title: "Blah blah"},
-        {date: new Date(2026, 5, 1, 0, 0, 0 ,0), title: "Blah blah"}
-    ]
-}
 
 window.addEventListener('load', event => {
     const first = timeline.events[0].date
@@ -96,7 +86,7 @@ function getTimelineEventAsHtml(e) {
 return `
 <li class="the-timeline-item">
 <article class="event box-shadow">
-<ul>
+<ul class="events-grid">
     <li>
         <header>
         <time class="purple" datetime="${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}">${months[e.date.getMonth()]} ${e.date.getDate()}, <span class="yearClass">${e.date.getFullYear()}</span></time>
@@ -148,7 +138,7 @@ let theStateOfThings = () => {
         let theId = $sec.getAttribute('id')
         let $dynamicDot = document.getElementById(`dot-${theId}`)
 
-        if (top < winH && bottom > 50) {
+        if (top < winH && bottom > 0) {
             $dynamicDot.classList.add('active-dot')         
 
         } else {
