@@ -67,7 +67,7 @@ window.addEventListener('scroll', event => {
         console.log('H1 is off the top')
         $titleBar.classList.add(`show`)
         $progress.classList.remove(`hide`)
-        $titleBar.innerHTML = `${title}`;
+        $titleBar.innerHTML = `<a href="https://dlorean.co"><span class="watch-icon tl"></span></a>${title}`;
 
     } else {
         $titleBar.classList.remove(`show`)

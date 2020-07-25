@@ -155,7 +155,7 @@ address {
 
 .masthead-cta {
     font-size: 1.1em;
-    text-align: left;
+    text-align: center;
     font-weight: 500;
     padding: 0.9em;
     margin-bottom: 0.7em;
@@ -218,7 +218,8 @@ address {
     width: 97%;
 }
 
-.the-timeline-item:not(:last-child)::before { /* the line */
+.the-timeline-item:not(:last-child)::before {
+    /* the line */
     content: "";
     display: block;
     position: absolute;
@@ -229,7 +230,8 @@ address {
     background-color: #d38bac;
 }
 
-.the-timeline-item::after { /* the dot */
+.the-timeline-item::after {
+    /* the dot */
     content: "";
     display: block;
     position: absolute;
@@ -320,6 +322,10 @@ address {
     height: 0.9em;
     width: 0.9em;
     padding-left: 1.1em;
+}
+
+.tl {
+    margin-left: 0.3em;
 }
 
 .contributors-icon {
@@ -592,7 +598,6 @@ address {
     margin-right: auto;
     width: 100%;
     height: 0.5em;
-    background-color: #F1F2F6;
     position: relative;
     z-index: 300;
 }
@@ -603,7 +608,7 @@ address {
     border-radius: 0.8em;
     width: 32%;
     height: 0.5em;
-    background-color: #2b2e42;
+    background-color: #9D9DB4;
 }
 
 .profile-menu-grid {
@@ -871,16 +876,6 @@ address {
     z-index: 999;
 }
 
-.titleBar::before {
-    content: "";
-    background-image: url(/img/watch.svg);
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: 0.1em;
-    background-size: auto 0.9em;
-    padding: 0.5em 0.0em 0.5em 1em;
-}
-
 .hide {
     display: none;
 }
@@ -967,7 +962,8 @@ address {
     padding-top: 8em;
     background: white;
     list-style-type: none;
-    -webkit-font-smoothing: antialiased; /*Safari */
+    -webkit-font-smoothing: antialiased;
+    /*Safari */
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
@@ -1044,7 +1040,6 @@ address {
     .masthead-cta {
         margin-right: 6.5em;
         font-size: 1.4em;
-        text-align: center;
         font-weight: 500;
         padding: 1.5em 0;
     }
@@ -1086,9 +1081,6 @@ address {
     .display-box-grid {
         grid-template-columns: 25% 50% 25%;
     }
-/*     .timelines-events-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    } */
     .channel {
         padding: 1em;
     }
@@ -1105,20 +1097,6 @@ address {
         position: absolute;
         z-index: 999;
     }
-  /*   .align-left-dot {
-        margin-left: -4.1em;
-    }
-    .align-left-line {
-        margin-left: -3.9em;
-        height: 130%;
-    }
-    .align-right-dot {
-        margin-left: 3.5em;
-    }
-    .align-right-line {
-        margin-left: 3.7em;
-        height: 130%;
-    } */
     .the-timeline {
         padding: 0.1em 1.3em 1em 1.3em;
         margin-bottom: 7em;
@@ -1136,30 +1114,27 @@ address {
         margin-left: auto;
         left: 0.5em;
     }
-    
-    .the-timeline-item:nth-child(odd):not(:last-child)::before { /* line odds*/
+    .the-timeline-item:nth-child(odd):not(:last-child)::before {
+        /* line odds*/
         left: auto;
         right: -2.05em;
     }
-
     .the-timeline-item::after {
         left: -2.1em;
     }
-
-    .the-timeline-item:nth-child(odd)::after { /* the dot odds*/
+    .the-timeline-item:nth-child(odd)::after {
+        /* the dot odds*/
         left: auto;
         right: -2.3em;
     }
     .event-img img {
-        width:40em ;
-        justify-content:center;
-        text-align:center;
-    } 
+        width: 40em;
+        justify-content: center;
+        text-align: center;
+    }
     .the-timeline-events-grid {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     
-
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
