@@ -86,7 +86,7 @@ function getTimelineEventAsHtml(e) {
 return `
 <li class="the-timeline-item">
 <article class="event box-shadow">
-<ul class="events-grid">
+<ul class="the-timeline-events-grid">
     <li>
         <header>
         <time class="purple" datetime="${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}">${months[e.date.getMonth()]} ${e.date.getDate()}, <span class="yearClass">${e.date.getFullYear()}</span></time>
