@@ -1099,7 +1099,7 @@ address {
     }
     .the-timeline {
         padding: 0.1em 1.3em 1em 1.3em;
-        margin-bottom: 7em;
+        /* margin-bottom: 7em; */
     }
     .the-timeline-item {
         height: 5em;
