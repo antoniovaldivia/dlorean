@@ -41,7 +41,7 @@ const timelinesArray = [{
     image: 'image3.png',
     permalink: 'http://dlorean.co/dlorean/timeline/3',
     events: [
-        { date: new Date(1901, 1, 1, 0, 0, 0, 0), title: "Event1 in Timeline 3", category: 'The Moon' },
+        { date: new Date(2001, 1, 1, 0, 0, 0, 0), title: "Event1 in Timeline 3", category: 'The Moon' },
         { date: new Date(1902, 2, 1, 0, 0, 0, 0), title: "Event2 Timeline 3" },
         { date: new Date(1911, 3, 1, 10, 33, 30, 0), title: "Event3 Timeline 3" },
         { date: new Date(1918, 11, 24, 11, 33, 30, 0), title: "Event4 Timeline 3" },
@@ -52,7 +52,41 @@ const timelinesArray = [{
 }
 ];
 
-const output = timelinesArray.map(({ title, author, description, image, permalink }) => {
+const output = timelinesArray.map(({ title, author, description, image, permalink, events }) => {
+
+
+    // -1 flip
+    // 0 same
+    // 1 same
+    const eventsAr = [...events].sort((a, b) => a.date.getTime() - b.date.getTime())
+
+
+    const first = eventsAr[0].date
+    const last = eventsAr[eventsAr.length - 1].date
+    const diffTime = Math.abs(first - last)
+    const totalDaysBetween = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+    // const $timeline = document.querySelector('.dynamic-timeline-line > ul')
+    const $timeline = document.createElement('ul')
+
+    eventsAr.forEach(e => {
+
+        const daysFromStart = Math.ceil(Math.abs(e.date - first) / (1000 * 60 * 60 * 24))
+        const percentOfLine = daysFromStart / totalDaysBetween
+
+        const dot = document.createElement('li')
+        $timeline.append(dot)
+        dot.className = 'dynamic-timeline-line-dot'
+        dot.id = `dot-${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}`
+        dot.style.setProperty('--percent', percentOfLine)
+
+        const time = document.createElement('time')
+        dot.append(time)
+        time.className = 'purple'
+        time.setAttribute('timedate',  `${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}`)
+        time.append(e.date.getFullYear())
+
+    })
+
     return `
       <li>
       <article class="timeline-box box-shadow">
@@ -74,28 +108,7 @@ const output = timelinesArray.map(({ title, author, description, image, permalin
           <ul class="dynamic-timeline purple-background">
               <li>
                   <div class="dynamic-timeline-line purple-line" id="tl-1">
-                      <ul>
-                          <li style="left: 0%;" class="dynamic-timeline-line-dot">
-                              <time class="purple" datetime="1834-03-06">
-                                  <span>1834</span></time>
-                          </li>
-                          <li style="left: 25%;" class="dynamic-timeline-line-dot">
-                              <time class="purple" datetime="1834-03-06">
-                                  <span>1870</span></time>
-                          </li>
-                          <li style="left: 50%;" class="dynamic-timeline-line-dot">
-                              <time class="purple" datetime="1834-03-06">
-                                  <span>1890</span></time>
-                          </li>
-                          <li style="left: 75%;" class="dynamic-timeline-line-dot">
-                              <time class="purple" datetime="1834-03-06">
-                                  <span>1900</span></time>
-                          </li>
-                          <li style="left: 100%;" class="dynamic-timeline-line-dot ">
-                              <time class="purple" datetime="1834-03-06">
-                                  <span>1920</span></time>
-                          </li>
-                      </ul>
+                      ${$timeline.outerHTML}
                   </div>
               </li>
               <li>
