@@ -41,7 +41,7 @@ const timelinesArray = [{
     image: 'image3.png',
     permalink: 'http://dlorean.co/dlorean/timeline/3',
     events: [
-        { date: new Date(1901, 1, 1, 0, 0, 0, 0), title: "Event1 in Timeline 3", category: 'The Moon' },
+        { date: new Date(2001, 1, 1, 0, 0, 0, 0), title: "Event1 in Timeline 3", category: 'The Moon' },
         { date: new Date(1902, 2, 1, 0, 0, 0, 0), title: "Event2 Timeline 3" },
         { date: new Date(1911, 3, 1, 10, 33, 30, 0), title: "Event3 Timeline 3" },
         { date: new Date(1918, 11, 24, 11, 33, 30, 0), title: "Event4 Timeline 3" },
@@ -52,7 +52,52 @@ const timelinesArray = [{
 }
 ];
 
-const output = timelinesArray.map(({ title, author, description, image, permalink }) => {
+const arrayTest: [{ title: 'Test', 
+                    author: 'toneid', 
+                    description: 'A new timeline', 
+                    image: 'https://dlorean.co/img/image.svg', 
+                    permalink: 'https://dlorean.co/toneid/timeline/151', 
+                    events: [ { date: new Date(2015, 02, 04, 00, 00,00), title: 'Event', image: 'https://dlorean.co/img/image.svg', location: 'Location NA', author: 'toneid', id: '56' }, { date: new Date(2015, 09, 04, 00, 00,00), title: 'AAAAA', image: 'https://dlorean.co/img/image.svg', location: 'Location NA', author: 'toneid', id: '54' }, { date: new Date(2015, 09, 04, 00, 00, 00), title: 'AAAAA', image: 'https://dlorean.co/img/image.svg', location: 'Location NA', author: 'toneid', id: '55' }, ] }, { title: 'Hola', author: 'toneid', description: '', image: 'https://dlorean.co/uploads/timelines/https://dlorean.co/img/image.svg', permalink: 'https://dlorean.co/toneid/timeline/152', events: [{ date: new Date(1985, 09, 04, 07, 00, 00), title: 'A new event 👶', image: 'https://dlorean.co/uploads/events/61.gif', location: 'Mexico Citu', author: 'toneid', id: '61' }, { date: new Date(2011, 11, 09, 00, 00, 00), title: 'New event', image: 'https://dlorean.co/img/image.svg', location: 'Location NA', author: 'toneid', id: '60' }, { date: new Date(2015, 10, 12, 00, 00, 00), title: 'Test', image: 'https://dlorean.co/img/image.svg', location: 'Location NA', author: 'dlorean', id: '58' }, { date: new Date(2020, 07, 02, 00, 00, 00), title: 'A new event 🔵', image: 'https://dlorean.co/img/image.svg', location: 'Location NA', author: 'toneid', id: '57' }, { date: new Date(2020, 07, 18, 00, 00, 00), title: 'A new event 🔵', image: 'https://dlorean.co/img/image.svg', location: 'Location NA', author: 'toneid', id: '59' },] }, { title: 'Private toneid', author: 'toneid', description: '', image: 'https://dlorean.co/uploads/timelines/https://dlorean.co/uploads/timelines/https://dlorean.co/img/image.svg', permalink: 'https://dlorean.co/toneid/timeline/153', events: [] }, ];
+
+
+
+
+
+const output = timelinesArray.map(({ title, author, description, image, permalink, events }) => {
+
+
+    // -1 flip
+    // 0 same
+    // 1 same
+    const eventsAr = [...events].sort((a, b) => a.date.getTime() - b.date.getTime())
+
+
+    const first = eventsAr[0].date
+    const last = eventsAr[eventsAr.length - 1].date
+    const diffTime = Math.abs(first - last)
+    const totalDaysBetween = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+    // const $timeline = document.querySelector('.dynamic-timeline-line > ul')
+    const $timeline = document.createElement('ul')
+
+    eventsAr.forEach(e => {
+
+        const daysFromStart = Math.ceil(Math.abs(e.date - first) / (1000 * 60 * 60 * 24))
+        const percentOfLine = daysFromStart / totalDaysBetween
+
+        const dot = document.createElement('li')
+        $timeline.append(dot)
+        dot.className = 'dynamic-timeline-line-dot'
+        dot.id = `dot-${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}`
+        dot.style.setProperty('--percent', percentOfLine)
+
+        const time = document.createElement('time')
+        dot.append(time)
+        time.className = 'purple'
+        time.setAttribute('timedate', `${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}`)
+        time.append(e.date.getFullYear())
+
+    })
+
     return `
       <li>
       <article class="timeline-box box-shadow">
@@ -69,143 +114,36 @@ const output = timelinesArray.map(({ title, author, description, image, permalin
                   </li>
               </ul>
               <p class="timeline-description">${description}</p>
+          </header>                <a href="timeline.html">
 
-          </header>
           <ul class="dynamic-timeline purple-background">
               <li>
-                  <div class="dynamic-timeline-line purple-line" id="tl-1">
-                      <ul>
-                          <li style="left: 0%;" class="dynamic-timeline-line-dot">
-                              <time class="purple" datetime="1834-03-06">
-                                  <span>1834</span></time>
-                          </li>
-                          <li style="left: 25%;" class="dynamic-timeline-line-dot">
-                              <time class="purple" datetime="1834-03-06">
-                                  <span>1870</span></time>
-                          </li>
-                          <li style="left: 50%;" class="dynamic-timeline-line-dot">
-                              <time class="purple" datetime="1834-03-06">
-                                  <span>1890</span></time>
-                          </li>
-                          <li style="left: 75%;" class="dynamic-timeline-line-dot">
-                              <time class="purple" datetime="1834-03-06">
-                                  <span>1900</span></time>
-                          </li>
-                          <li style="left: 100%;" class="dynamic-timeline-line-dot ">
-                              <time class="purple" datetime="1834-03-06">
-                                  <span>1920</span></time>
-                          </li>
-                      </ul>
-                  </div>
+                  <div class="dynamic-timeline-line purple-line">
+                      ${$timeline.outerHTML}
+               
+                </div> 
               </li>
               <li>
                   <ul class="timelines-events-grid">
                       <li>
                       </li>
-
                   </ul>
               </li>
-            </ul>
+            </ul></a>
         </article>
         </li>
             `
 }).join('');
 
-
 popularTimelinesGrid.innerHTML = `${output}`;
 
-
-
-
-/* The timeline dots code */
-
-/*
-window.addEventListener('load', event => {
-    const first = timeline.events[0].date
-    const last = timeline.events[timeline.events.length - 1].date
-    const diffTime = Math.abs(first - last)
-    const totalDaysBetween = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
-    const $timeline = document.querySelector('.dynamic-timeline-line > ul')
-    const $eventgrid = document.querySelector('.the-timeline')
-    $timeline.innerHTML = "" // cheating, fix this
-    $eventgrid.innerHTML = ""
-    timeline.events.forEach(e => {
- 
-        const daysFromStart = Math.ceil(Math.abs(e.date - first) / (1000 * 60 * 60 * 24))
-        const percentOfLine = daysFromStart / totalDaysBetween
- 
-        const dot = document.createElement('li')
-        $timeline.append(dot)
-        dot.className = 'dynamic-timeline-line-dot'
-        dot.id = `dot-${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}`
-        dot.style.setProperty('--percent', percentOfLine)
- 
-        const time = document.createElement('time')
-        dot.append(time)
-        time.className = 'purple'
-        time.setAttribute('timedate',  `${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}`)
-        time.append(e.date.getFullYear())
- 
-        $eventgrid.innerHTML += getTimelineEventAsHtml(e)
- 
- 
-    })
-})
-
-function getTimelineEventAsHtml(e) {
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    
-if (!e.location) {
-    e.location = "Location NA"
-};
- 
-return `
-<li class="the-timeline-item">
-<article class="event box-shadow">
-<ul class="the-timeline-events-grid">
-    <li>
-        <header class="timeline-event-header">
-        <time class="purple" datetime="${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}">${months[e.date.getMonth()]} ${e.date.getDate()}, <em class="yearClass">${e.date.getFullYear()}</em></time>
-            <a href="/${e.author}/event/${e.id}">
-            <h2 class="eventHeader" id="${e.date.getFullYear()}-${e.date.getMonth()}-${e.date.getDate()}">${e.title}</h2>
-            </a>
-            <p><address><span class="location-icon"></span><a href="http://maps.google.com/?q=${e.location}" target="_blank">${e.location}</a></address></p>
-            <p><span class="author-icon"></span>By <a href="/${e.author}" target="_blank">${e.author}</a></p>
-        </header>
-    </li>
-    <li class="event-img">				
-            <a href="/${e.author}/event/${e.id}">
-                <img src="${e.image}"
-                alt="An image of One Giant Leap For Mankind: The First Person on the Moon"></a>
-    </li>
-    <li>
-        <footer>
-            <ul class="event-interactions-grid">
-                <li>
-                    <p>Likes</p>
-                </li>
-                <li>
-                    <p>Comments</p>
-                </li>
-            </ul>
-        </footer>
-    </li>
-</ul>
-</article>
- 
-</li>`
-}
-
-
-/*
- 
 /* Popular Events */
 const PopularEventsArray = [
     {
         title: 'Event 1',
         events: [
             {
-                date: new Date(2015, 11, 21, 10, 33, 30, 0), 
+                date: new Date(2015, 11, 21, 10, 33, 30, 0),
                 title: "Event Title 1",
                 place: "Location 1"
             }
@@ -215,7 +153,7 @@ const PopularEventsArray = [
         title: 'Event 2',
         events: [
             {
-                date: new Date(2018, 11, 21, 10, 33, 30, 0), 
+                date: new Date(2018, 11, 21, 10, 33, 30, 0),
                 title: "Event Title 2",
                 place: "Location 2"
             }
@@ -225,37 +163,37 @@ const PopularEventsArray = [
         title: 'Event 3',
         events: [
             {
-                date: new Date(2018, 11, 21, 10, 33, 30, 0), 
+                date: new Date(2018, 11, 21, 10, 33, 30, 0),
                 title: "Event Title 3",
                 place: "Location 3"
             }
         ]
-    },  
+    },
     {
         title: 'Event 4',
         events: [
             {
-                date: new Date(2018, 11, 21, 10, 33, 30, 0), 
+                date: new Date(2018, 11, 21, 10, 33, 30, 0),
                 title: "Event Title 4",
                 place: "Location 4"
             },
         ]
-    },  
+    },
     {
         title: 'Event 5',
         events: [
             {
-                date: new Date(2018, 11, 21, 10, 33, 30, 0), 
+                date: new Date(2018, 11, 21, 10, 33, 30, 0),
                 title: "Event Title 5",
                 place: "Location 5"
             },
         ]
-    },  
+    },
     {
         title: 'Event 6',
         events: [
             {
-                date: new Date(2018, 11, 21, 10, 33, 30, 0), 
+                date: new Date(2018, 11, 21, 10, 33, 30, 0),
                 title: "Event Title 6",
                 place: "Location 6"
             },
